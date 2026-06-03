@@ -1,7 +1,14 @@
 {
   "owner": {
     "name": "Benjamin Lam",
-    "homepage": "https://benjamin-lam.github.io/"
+    "homepage": "https://benjamin-lam.github.io/",
+    "email": "benjamin-lam@outlook.de",
+    "address": {
+      "street": "Schwachhauser Heerstraße 100",
+      "postal_code": "28209",
+      "city": "Bremen",
+      "country": "Deutschland"
+    }
   },
   "footer": {
     "intro": "Benjamin Lam nutzt einen erstaunlich großen Teil des Internets, um seine Gedanken zu posten. Falls du irgendwo etwas findest, das hier noch nicht archiviert ist: her damit.",
@@ -10,12 +17,24 @@
         "title": "Blogs & eigene Seiten",
         "links": [
           {
+            "label": "benjamin-lam.de",
+            "url": "https://benjamin-lam.de/"
+          },
+          {
+            "label": "blame76.com",
+            "url": "https://blame76.com/"
+          },
+          {
             "label": "blame76.de",
             "url": "https://blame76.de/"
           },
           {
-            "label": "benjamin-lam.github.io",
-            "url": "https://benjamin-lam.github.io/"
+            "label": "altundwillig.de",
+            "url": "https://altundwillig.de/"
+          },
+          {
+            "label": "GitHub",
+            "url": "https://github.com/benjamin-lam"
           }
         ]
       },
@@ -23,33 +42,45 @@
         "title": "Social Media & Plattformen",
         "links": [
           {
-            "label": "LinkedIn",
-            "url": "https://www.linkedin.com/"
+            "label": "Threads",
+            "url": "https://www.threads.com/@benjamin_lam"
           },
           {
             "label": "Medium",
-            "url": "https://medium.com/"
+            "url": "https://medium.com/@benjaminlam_46803"
           },
           {
             "label": "dev.to",
-            "url": "https://dev.to/"
+            "url": "https://dev.to/blame76"
           },
           {
-            "label": "Twitter / X",
-            "url": "https://x.com/"
+            "label": "Substack",
+            "url": "https://substack.com/@blame76"
           },
           {
-            "label": "Threads",
-            "url": "https://www.threads.net/"
+            "label": "Instagram",
+            "url": "https://www.instagram.com/benjamin_lam/"
           },
           {
-            "label": "Mastodon",
-            "url": "https://mastodon.social/"
+            "label": "X",
+            "url": "https://x.com/benjamin_lam"
+          },
+          {
+            "label": "Shopify Community",
+            "url": "https://community.shopify.com/u/benjamin-lam/summary"
+          },
+          {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/in/was-mit-internet/"
+          },
+          {
+            "label": "Cursor Directory",
+            "url": "https://cursor.directory/u/blame76.com"
           }
         ]
       },
       {
-        "title": "Rechtliches",
+        "title": "Impressum",
         "links": [
           {
             "label": "Impressum",
@@ -58,10 +89,6 @@
           {
             "label": "Datenschutz",
             "url": "/datenschutz/"
-          },
-          {
-            "label": "Rechtliche Hinweise",
-            "url": "/rechtliche-hinweise/"
           }
         ]
       }
