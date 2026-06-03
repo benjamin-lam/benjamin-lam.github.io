@@ -1,32 +1,115 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Benjamin Lam by benjamin-lam</title>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Benjamin Lam</h1>
-        <p>we're behaving like insects</p>
-      </header>
-      <section>
+  <title>Benjamin Lam – Veröffentlichungsarchiv</title>
+  <meta name="description" content="Archivierte Veröffentlichungen von Benjamin Lam: Artikel, Posts und Essays aus LinkedIn, Medium, dev.to, eigenen Blogs und weiteren Quellen.">
+  <link rel="canonical" href="https://benjamin-lam.github.io/">
 
-      </section>
-      <footer>
-        <p class="view"><a href="https://github.com/benjamin-lam">View My GitHub Profile</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+  <meta name="author" content="Benjamin Lam">
+  <meta name="robots" content="index,follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Benjamin Lam – Veröffentlichungsarchiv">
+  <meta property="og:description" content="Archivierte Veröffentlichungen von Benjamin Lam: Artikel, Posts und Essays aus LinkedIn, Medium, dev.to, eigenen Blogs und weiteren Quellen.">
+  <meta property="og:url" content="https://benjamin-lam.github.io/">
+  <meta property="og:site_name" content="Benjamin Lam – Veröffentlichungsarchiv">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Benjamin Lam – Veröffentlichungsarchiv">
+  <meta name="twitter:description" content="Archivierte Veröffentlichungen von Benjamin Lam: Artikel, Posts und Essays aus LinkedIn, Medium, dev.to, eigenen Blogs und weiteren Quellen.">
+
+  <link rel="stylesheet" href="/assets/css/archive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Benjamin Lam – Veröffentlichungsarchiv",
+    "description": "Archivierte Veröffentlichungen von Benjamin Lam: Artikel, Posts und Essays aus LinkedIn, Medium, dev.to, eigenen Blogs und weiteren Quellen.",
+    "url": "https://benjamin-lam.github.io/",
+    "dateModified": "2026-06-03",
+    "author": {
+      "@type": "Person",
+      "name": "Benjamin Lam",
+      "url": "https://benjamin-lam.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main class="page archive-page">
+    <header class="site-header">
+      <h1 class="site-title">Veröffentlichungsarchiv</h1>
+      <p class="site-description">Archivierte Veröffentlichungen von Benjamin Lam: Artikel, Posts und Essays aus LinkedIn, Medium, dev.to, eigenen Blogs und weiteren Quellen.</p>
+      <p class="archive-meta">1 archivierte Veröffentlichung</p>
+    </header>
+
+    <section class="archive-controls" aria-label="Archiv filtern">
+      <label>
+        Suche
+        <input type="search" id="archive-search" placeholder="Titel, Beschreibung oder Tag suchen">
+      </label>
+
+      <label>
+        Veröffentlichungsort
+        <select id="archive-source">
+          <option value="">Alle Quellen</option>
+        <option value="blog">Blog</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="archive-section" id="blog">
+      <h2>Blog</h2>
+      <ul class="article-list">
+      <li class="archive-item" data-source="blog" data-tags="ki arbeitsräume softwareentwicklung digitale arbeit handwerk verantwortung" data-status="aktuell">
+        <a href="/blog/2026-06-02-der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/">Der KI-Arbeitsraum und warum wir ihn brauchen</a>
+        <span class="meta">blame76.de · 02.06.2026 · Status: aktuell · Tags: KI, Arbeitsräume, Softwareentwicklung, digitale Arbeit, Handwerk, Verantwortung</span>
+        <p class="summary">Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 02.06.2026 auf blame76.de.</p>
+      </li>
+      </ul>
+    </section>
+
+    <p id="archive-empty" class="visually-muted" hidden>Keine passenden Veröffentlichungen gefunden.</p>
+  </main>
+
+  <script>
+    const searchInput = document.getElementById('archive-search');
+    const sourceSelect = document.getElementById('archive-source');
+    const items = Array.from(document.querySelectorAll('.archive-item'));
+    const emptyState = document.getElementById('archive-empty');
+
+    function normalize(value) {
+      return (value || '').toLowerCase().trim();
+    }
+
+    function applyFilters() {
+      const query = normalize(searchInput.value);
+      const source = normalize(sourceSelect.value);
+      let visibleCount = 0;
+
+      for (const item of items) {
+        const text = normalize(item.textContent);
+        const itemSource = normalize(item.dataset.source);
+        const matchesQuery = !query || text.includes(query);
+        const matchesSource = !source || itemSource === source;
+        const visible = matchesQuery && matchesSource;
+
+        item.hidden = !visible;
+
+        if (visible) {
+          visibleCount++;
+        }
+      }
+
+      emptyState.hidden = visibleCount !== 0;
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+    sourceSelect.addEventListener('change', applyFilters);
+  </script>
+</body>
 </html>
