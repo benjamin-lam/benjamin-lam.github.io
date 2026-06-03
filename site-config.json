@@ -1,0 +1,70 @@
+{
+  "owner": {
+    "name": "Benjamin Lam",
+    "homepage": "https://benjamin-lam.github.io/"
+  },
+  "footer": {
+    "intro": "Benjamin Lam nutzt einen erstaunlich großen Teil des Internets, um seine Gedanken zu posten. Falls du irgendwo etwas findest, das hier noch nicht archiviert ist: her damit.",
+    "sections": [
+      {
+        "title": "Blogs & eigene Seiten",
+        "links": [
+          {
+            "label": "blame76.de",
+            "url": "https://blame76.de/"
+          },
+          {
+            "label": "benjamin-lam.github.io",
+            "url": "https://benjamin-lam.github.io/"
+          }
+        ]
+      },
+      {
+        "title": "Social Media & Plattformen",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/"
+          },
+          {
+            "label": "Medium",
+            "url": "https://medium.com/"
+          },
+          {
+            "label": "dev.to",
+            "url": "https://dev.to/"
+          },
+          {
+            "label": "Twitter / X",
+            "url": "https://x.com/"
+          },
+          {
+            "label": "Threads",
+            "url": "https://www.threads.net/"
+          },
+          {
+            "label": "Mastodon",
+            "url": "https://mastodon.social/"
+          }
+        ]
+      },
+      {
+        "title": "Rechtliches",
+        "links": [
+          {
+            "label": "Impressum",
+            "url": "/impressum/"
+          },
+          {
+            "label": "Datenschutz",
+            "url": "/datenschutz/"
+          },
+          {
+            "label": "Rechtliche Hinweise",
+            "url": "/rechtliche-hinweise/"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -5,6 +5,10 @@ generate-index.py
 Sucht rekursiv nach article.json-Dateien und erzeugt:
 - index.html
 - search.json
+
+Zusätzlich:
+- Liest optional site-config.json
+- Rendert daraus auf der Startseite einen Footer mit Blogs, Social Links und Rechtlichem
 """
 
 from __future__ import annotations
@@ -48,18 +52,34 @@ def parse_args() -> argparse.Namespace:
         default=Path.cwd(),
         help="Root-Verzeichnis des GitHub-Pages-Repositories. Standard: aktuelles Verzeichnis.",
     )
+    parser.add_argument(
+        "--config",
+        type=Path,
+        default=None,
+        help="Optionale site-config.json. Standard: {root}/site-config.json",
+    )
     return parser.parse_args()
 
 
 def load_json(path: Path) -> dict[str, Any] | None:
     try:
         return json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return None
     except json.JSONDecodeError as exc:
         print(f"[WARN] Ungültiges JSON: {path} ({exc})")
         return None
     except OSError as exc:
         print(f"[WARN] Konnte Datei nicht lesen: {path} ({exc})")
         return None
+
+
+def load_site_config(root: Path, config_path: Path | None) -> dict[str, Any]:
+    path = config_path or (root / "site-config.json")
+    data = load_json(path)
+    if not data:
+        return {}
+    return data
 
 
 def is_article_json(path: Path, root: Path) -> bool:
@@ -175,7 +195,6 @@ def esc(value: Any) -> str:
 def render_tag_list(tags: list[str]) -> str:
     if not tags:
         return ""
-
     return ", ".join(esc(tag) for tag in tags)
 
 
@@ -217,7 +236,67 @@ def render_source_section(source_slug: str, articles: list[dict[str, Any]]) -> s
     </section>"""
 
 
-def build_index_html(articles: list[dict[str, Any]]) -> str:
+def render_footer(config: dict[str, Any]) -> str:
+    footer = config.get("footer", {})
+    if not isinstance(footer, dict):
+        return ""
+
+    intro = str(footer.get("intro", "")).strip()
+    sections = footer.get("sections", [])
+
+    if not intro and not sections:
+        return ""
+
+    section_html = []
+
+    if isinstance(sections, list):
+        for section in sections:
+            if not isinstance(section, dict):
+                continue
+
+            title = str(section.get("title", "")).strip()
+            links = section.get("links", [])
+
+            if not title and not links:
+                continue
+
+            link_items = []
+
+            if isinstance(links, list):
+                for link in links:
+                    if not isinstance(link, dict):
+                        continue
+
+                    label = str(link.get("label", "")).strip()
+                    url = str(link.get("url", "")).strip()
+
+                    if not label or not url:
+                        continue
+
+                    link_items.append(
+                        f'          <li><a href="{esc(url)}" rel="me noopener">{esc(label)}</a></li>'
+                    )
+
+            links_html = "\n".join(link_items)
+
+            section_html.append(f"""      <section class="archive-footer-section">
+        <h2>{esc(title)}</h2>
+        <ul class="archive-footer-list">
+{links_html}
+        </ul>
+      </section>""")
+
+    intro_html = f'      <p class="archive-footer-intro">{esc(intro)}</p>\n' if intro else ""
+    sections_html = "\n".join(section_html)
+
+    return f"""    <footer class="archive-footer">
+{intro_html}      <div class="archive-footer-grid">
+{sections_html}
+      </div>
+    </footer>"""
+
+
+def build_index_html(articles: list[dict[str, Any]], config: dict[str, Any]) -> str:
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for article in articles:
         grouped[article["source_slug"]].append(article)
@@ -244,6 +323,8 @@ def build_index_html(articles: list[dict[str, Any]]) -> str:
         for source_slug in SOURCE_ORDER
         if grouped.get(source_slug)
     )
+
+    footer = render_footer(config)
 
     today = date.today().isoformat()
     article_count_label = "archivierte Veröffentlichung" if len(articles) == 1 else "archivierte Veröffentlichungen"
@@ -315,6 +396,8 @@ def build_index_html(articles: list[dict[str, Any]]) -> str:
 {sections}
 
     <p id="archive-empty" class="visually-muted" hidden>Keine passenden Veröffentlichungen gefunden.</p>
+
+{footer}
   </main>
 
   <script>
@@ -383,17 +466,25 @@ def main() -> int:
         print(f"[ERROR] Root-Verzeichnis existiert nicht: {root}")
         return 1
 
+    config_path = args.config.expanduser().resolve() if args.config else None
+    config = load_site_config(root, config_path)
+
     articles = find_articles(root)
 
     index_path = root / "index.html"
     search_path = root / "search.json"
 
-    index_path.write_text(build_index_html(articles), encoding="utf-8")
+    index_path.write_text(build_index_html(articles, config), encoding="utf-8")
     search_path.write_text(build_search_json(articles), encoding="utf-8")
 
     print(f"[OK] {len(articles)} Artikel gefunden.")
     print(f"[OK] Geschrieben: {index_path}")
     print(f"[OK] Geschrieben: {search_path}")
+
+    if config:
+        print("[OK] site-config.json geladen.")
+    else:
+        print("[INFO] Keine site-config.json gefunden oder Datei leer/ungültig.")
 
     if not articles:
         print("[WARN] Keine article.json-Dateien gefunden.")
