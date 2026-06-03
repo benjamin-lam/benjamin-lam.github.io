@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Was ich aus einer Copilot-Session über Prompt Driven Development gelernt habe | Benjamin Lam</title>
+  <meta name="description" content="Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 22.05.2026 auf LinkedIn.">
+  <link rel="canonical" href="https://benjamin-lam.github.io/linkedin/2026-05-22-was-ich-aus-einer-copilot-session-ueber-prompt-driven-development-gelernt-habe/">
+  <meta name="author" content="Benjamin Lam">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Was ich aus einer Copilot-Session über Prompt Driven Development gelernt habe">
+  <meta property="og:description" content="Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 22.05.2026 auf LinkedIn.">
+  <meta property="og:url" content="https://benjamin-lam.github.io/linkedin/2026-05-22-was-ich-aus-einer-copilot-session-ueber-prompt-driven-development-gelernt-habe/">
+  <meta property="og:site_name" content="Benjamin Lam Veröffentlichungsarchiv">
+  <meta property="article:published_time" content="2026-05-22">
+  <meta property="article:modified_time" content="2026-06-03">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Was ich aus einer Copilot-Session über Prompt Driven Development gelernt habe">
+  <meta name="twitter:description" content="Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 22.05.2026 auf LinkedIn.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Was ich aus einer Copilot-Session über Prompt Driven Development gelernt habe","description":"Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 22.05.2026 auf LinkedIn.","datePublished":"2026-05-22","dateModified":"2026-06-03","author":{"@type":"Person","name":"Benjamin Lam"},"publisher":{"@type":"Person","name":"Benjamin Lam"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://benjamin-lam.github.io/linkedin/2026-05-22-was-ich-aus-einer-copilot-session-ueber-prompt-driven-development-gelernt-habe/"},"url":"https://benjamin-lam.github.io/linkedin/2026-05-22-was-ich-aus-einer-copilot-session-ueber-prompt-driven-development-gelernt-habe/","isBasedOn":"https://de.linkedin.com/pulse/ich-aus-einer-copilot-session-%C3%BCber-prompt-driven-development-lam-tccme","keywords":["ki","prompting","copilot","entwicklung","arbeitswelt","kontext"],"inLanguage":"de"}</script>
+  <link rel="stylesheet" href="/assets/css/archive.css">
+</head>
+<body>
+  <main class="page article-page">
+    <a class="back-link" href="/">← Zurück zum Archiv</a>
+
+    <article class="archived-article">
+      <header class="article-header">
+        <h1 class="article-title">Was ich aus einer Copilot-Session über Prompt Driven Development gelernt habe</h1>
+
+        <div class="publication-note">
+          <p>Dieser Artikel erschien zuerst am 22.05.2026 auf LinkedIn.</p>
+          <p>Original: <a href="https://de.linkedin.com/pulse/ich-aus-einer-copilot-session-%C3%BCber-prompt-driven-development-lam-tccme">LinkedIn</a></p>
+        </div>
+      </header>
+
+      <section class="article-body">
+<hr>
+<p>Eigentlich wollte ich nur ein Vorschaubild debuggen.</p>
+<p>OpenGraph. Link Share. LinkedIn Preview. Dieses schöne kleine Randthema, das immer genau dann aufpoppt, wenn man dachte: „Die Seite ist fertig.“</p>
+<p>Das Bild wurde nicht sauber gezogen. Oder doch. Oder LinkedIn hatte noch einen alten Stand im Cache. Also einmal die übliche Runde: externe Preview-Tools, Meta-Tags prüfen, Cache-Vermutungen, Ergebnis vergleichen.</p>
+<p>Und dann kam dieser sehr naheliegende Gedanke:</p>
+<p>Warum habe ich dafür eigentlich kein eigenes Tool?</p>
+<p>Nicht nur für OpenGraph. Auch für JSON. Base64. URL-Encoding. HTML-Entities. JWTs. Slugs. Structured Data. Markdown. Regex. Timestamp-Konvertierung. All diese kleinen Werkzeuge, die man ständig irgendwo im Netz sucht, obwohl man sie eigentlich lieber selbst kontrolliert hätte.</p>
+<p>Und weil wir ja in Zeiten von KI-Automatisierung, Coding Agents und diesem ominösen „Vibe Coding“ leben, war der nächste Gedanke natürlich:</p>
+<p>Warum ein Tool bauen, wenn ich gleich eine ganze Tool-Sammlung bekommen kann?</p>
+<p>Gesagt. Gepromptet. Gebaut.</p>
+<p>Ein paar Prompts später stand eine statische Web-Toolbox für GitHub Pages. Mobile first. Keine Cookies. Kein Tracking. Kein Backend. Keine externen CDNs. Keine externen Fonts. Keine Live-Prüfung fremder URLs im MVP. Dafür eine klare Struktur, Toolseiten, README, Security-Hinweise, Open-Source-Disclaimer und Playwright-Tests als Release-Sicherheitsnetz.</p>
+<p>Aber eigentlich ist das Ergebnis gar nicht der spannendste Teil.</p>
+<p>Spannender ist der Weg dahin.</p>
+<p>Es ist noch gar nicht so lange her, da klangen viele KI-Coding-Versuche ungefähr so:</p>
+<p>Dann kam ein bisschen Vibe. Ein bisschen Spezifikation. Ein paar technische Wünsche. Und am Ende etwas, das auf den ersten Blick beeindruckend aussah, aber beim zweiten Blick auseinanderfiel.</p>
+<p>Nicht immer, weil der Prompt schlecht war.</p>
+<p>Sondern weil die Systeme noch nicht wirklich gut darin waren, Arbeit zu strukturieren, Grenzen zu respektieren, Folgeentscheidungen sauber abzuleiten und den eigenen Output gegen die ursprünglichen Anforderungen zu prüfen.</p>
+<p>Heute sieht das anders aus.</p>
+<p>Nicht perfekt. Aber deutlich anders.</p>
+<p>Die Tool-Liste war relativ banal:</p>
+<p>JSON Formatter. HTML Formatter. Base64 Encode/Decode. URL Encode/Decode. JWT Decoder. UTM Builder. Markdown Preview. Regex Tester. OpenGraph Inspector aus eingefügtem HTML. Structured Data Extractor. Inspect-URI-Platzhalter.</p>
+<p>Das ist nicht die Revolution.</p>
+<p>Die eigentliche Qualität entstand durch die Grenzen:</p>
+<pre><code>kein Backend
+kein Tracking
+keine Cookies
+kein LocalStorage
+keine externen CDNs
+keine externen Fonts
+kein npm für die App
+kein Build-System
+keine Live-Prüfung fremder URLs
+kein Crawler
+kein Proxy
+kein Screenshot-Service
+/api/inspect-uri nur vorbereiten</code></pre>
+<p>Diese Negativ-Anforderungen waren wahrscheinlich wichtiger als die eigentlichen Features.</p>
+<p>Denn sie haben den Entscheidungsraum begrenzt.</p>
+<p>Die KI musste nicht raten, ob sie „mal eben“ ein Framework hinzufügen soll. Sie musste nicht interpretieren, ob ein Service Worker hilfreich wäre. Sie musste nicht aus einer Toolseite plötzlich eine kleine SaaS machen.</p>
+<p>Die Ansage war klar:</p>
+<p>Statisch. Sicher. GitHub Pages. Browserbasiert. Kein Overengineering.</p>
+<p>Und genau daraus entstand die Architektur.</p>
+<p>Was mich an der Session wirklich interessiert hat, war die Beziehung zwischen Anweisung und Umsetzung.</p>
+<p>Ein paar Beispiele:</p>
+<p>Prompt-Anweisung / Umsetzung durch Copilot / Erkenntnis</p>
+<ul>
+<li><strong>Prompt-Anweisung:</strong> „GitHub Pages kompatibel“<br><strong>Umsetzung durch Copilot:</strong> statische HTML/CSS/JS-Struktur<br><strong>Erkenntnis:</strong> Plattformwahl prägt Architektur</li>
+<li><strong>Prompt-Anweisung:</strong> „kein npm / kein Build-System“<br><strong>Umsetzung durch Copilot:</strong> keine Frameworks, kein Build-Step<br><strong>Erkenntnis:</strong> Tooling wurde bewusst klein gehalten</li>
+<li><strong>Prompt-Anweisung:</strong> „keine Cookies / kein Tracking“<br><strong>Umsetzung durch Copilot:</strong> keine Speicherung, keine Analytics<br><strong>Erkenntnis:</strong> Privacy wurde zur technischen Leitplanke</li>
+<li><strong>Prompt-Anweisung:</strong> „keine externen Requests“<br><strong>Umsetzung durch Copilot:</strong> keine CDNs, keine Fonts, keine externen Libraries<br><strong>Erkenntnis:</strong> Performance und Datenschutz wurden miterzwungen</li>
+<li><strong>Prompt-Anweisung:</strong> „/api/inspect-uri nur vorbereiten“<br><strong>Umsetzung durch Copilot:</strong> UI-Platzhalter statt gefährlicher Live-Fetch<br><strong>Erkenntnis:</strong> Zukunft vorbereitet, Risiko vermieden</li>
+<li><strong>Prompt-Anweisung:</strong> „kein Crawler, kein Proxy“<br><strong>Umsetzung durch Copilot:</strong> Scope-&amp;-Limits-Sektion<br><strong>Erkenntnis:</strong> Nicht-Ziele wurden Teil des Produkts</li>
+<li><strong>Prompt-Anweisung:</strong> konkrete Dateiliste<br><strong>Umsetzung durch Copilot:</strong> alle Toolseiten wurden erstellt<br><strong>Erkenntnis:</strong> Struktur schlägt Absicht</li>
+<li><strong>Prompt-Anweisung:</strong> konkrete Akzeptanzkriterien<br><strong>Umsetzung durch Copilot:</strong> Review entlang dieser Kriterien<br><strong>Erkenntnis:</strong> Prüfung wurde schon im Prompt mitgebaut</li>
+<li><strong>Prompt-Anweisung:</strong> „Review als Security Reviewer“<br><strong>Umsetzung durch Copilot:</strong> innerHTML-Audit, Markdown-Bug gefunden<br><strong>Erkenntnis:</strong> Rollenwechsel verbessert Qualität</li>
+<li><strong>Prompt-Anweisung:</strong> „Playwright nur für Tests“<br><strong>Umsetzung durch Copilot:</strong> npm nur als Testabhängigkeit<br><strong>Erkenntnis:</strong> Tooling erlaubt, Produktarchitektur geschützt</li>
+</ul>
+<p>Das ist für mich der interessante Punkt:</p>
+<p>Der erste Prompt hat gebaut.</p>
+<p>Der zweite Prompt hat gehärtet.</p>
+<p>Das ist vielleicht die wichtigste praktische Erkenntnis aus der Session.</p>
+<p>Nach der ersten Umsetzung kam kein „sieht gut aus, merge“. Sondern ein zweiter Auftrag:</p>
+<p>Prüfe das Projekt als Senior Frontend Engineer, Security Reviewer und Open-Source-Maintainer.</p>
+<p>Und plötzlich wurden andere Dinge sichtbar:</p>
+<ul>
+<li>Fehlt eine LICENSE?</li>
+<li>Gibt es einen SECURITY.md?</li>
+<li>Ist der AI-assisted development Hinweis sauber formuliert?</li>
+<li>Gibt es einen Disclaimer?</li>
+<li>Wird irgendwo innerHTML mit Userdaten verwendet?</li>
+<li>Kann Markdown XSS auslösen?</li>
+<li>Sind alle Tools wirklich vorhanden?</li>
+<li>Sind alle Seiten über Navigation erreichbar?</li>
+<li>Gibt es externe Requests?</li>
+<li>Wird LocalStorage verwendet?</li>
+<li>Ist /api/inspect-uri wirklich nur vorbereitet?</li>
+</ul>
+<p>Dabei wurde sogar ein echter Bug gefunden: Im Markdown-Parser gab es ein Problem mit JavaScripts String.replace() und $-Substitutionen. Kein XSS, kein Weltuntergang, aber ein echter Fehler — vermutlich genau einer von denen, die erst auffallen, wenn man das Tool gerade wirklich braucht und sich fragt, warum der Preview plötzlich Unsinn erzählt.</p>
+<p>Nicht weil die KI perfekt war. Sondern weil der zweite Prompt einen anderen Blick erzwungen hat.</p>
+<p>Bauen und Reviewen sind zwei verschiedene Tätigkeiten. Auch mit KI.</p>
+<p>Vielleicht sogar besonders mit KI.</p>
+<p>Ich habe nichts gegen Vibes.</p>
+<p>Vibes sind gut, um eine Richtung zu setzen.</p>
+<p>Aber Vibes ersetzen keine Grenzen.</p>
+<p>„Mach mir eine schöne Toolseite“ führt zu irgendwas. „Baue eine statische GitHub-Pages-Toolbox ohne Backend, ohne Tracking, ohne externe Requests, mit genau diesen Toolseiten, diesen Nicht-Zielen, diesen Akzeptanzkriterien und anschließendem Security-Review“ führt zu einem anderen Ergebnis.</p>
+<p>Das ist für mich der Unterschied:</p>
+<p>Vibe Coding sagt:</p>
+<p>Prompt Driven Development sagt:</p>
+<p>Für mich war diese Session weniger ein Benchmark der KI.</p>
+<p>Es war eher ein Benchmark der Beziehung zwischen Mensch und KI.</p>
+<p>Die KI wurde nicht als magischer Entwickler behandelt. Auch nicht als dummer Codegenerator.</p>
+<p>Eher als erfahrener Entwickler, der unverhofft in ein Projekt geworfen wird und deshalb sehr klare Rahmenbedingungen braucht:</p>
+<ul>
+<li>Was ist das Ziel?</li>
+<li>Was ist ausdrücklich nicht das Ziel?</li>
+<li>Welche Plattform gilt?</li>
+<li>Welche Risiken sollen vermieden werden?</li>
+<li>Was bedeutet „fertig“?</li>
+<li>Wer prüft das Ergebnis?</li>
+<li>Welche Tests sichern den Stand ab?</li>
+</ul>
+<p>Je klarer diese Fragen beantwortet waren, desto besser wurde die Umsetzung.</p>
+<p>Und ja, das Ergebnis nähert sich mittlerweile tatsächlich dem an, was man von einem erfahrenen Entwickler erwarten würde, der schnell produktiv werden soll.</p>
+<p>Nicht, weil man ihn mit einem Superprompt motiviert. Sondern weil man ihm Kontext, Grenzen und Prüfkriterien gibt.</p>
+<p>Erstens: <strong>Nicht-Ziele sind produktiver als man denkt.</strong> „Kein Backend“ hat mehr Architektur entschieden als „baue ein Tool“.</p>
+<p>Zweitens: <strong>Akzeptanzkriterien sind Prompts mit Zukunft.</strong> Was am Ende geprüft werden soll, muss am Anfang formuliert werden.</p>
+<p>Drittens: <strong>Review ist ein eigener Prompt-Schritt.</strong> Eine KI, die baut, ist nicht automatisch dieselbe KI, die gut prüft.</p>
+<p>Viertens: <strong>Tooling muss begrenzt werden.</strong> Playwright für Tests? Ja. Playwright als Produktbestandteil? Nein.</p>
+<p>Fünftens: <strong>Ein guter Prompt erzeugt nicht nur Code, sondern Verhalten.</strong> Er legt fest, wie Entscheidungen getroffen werden.</p>
+<p>Ich wollte eigentlich nur ein OpenGraph-Problem lösen.</p>
+<p>Am Ende hatte ich eine kleine Web-Toolbox und eine deutlich klarere Vorstellung davon, wie sich KI-gestützte Entwicklung gerade verändert.</p>
+<p>Der spannende Teil ist nicht, dass eine KI Code schreiben kann.</p>
+<p>Der spannende Teil ist, dass sie zunehmend in der Lage ist, innerhalb sauber formulierter Grenzen produktiv zu arbeiten.</p>
+<p>Aber genau diese Grenzen entstehen nicht von allein.</p>
+<p>Sie sind unsere Aufgabe.</p>
+<p>Oder etwas zugespitzt:</p>
+<p>Und jetzt wende ich mich wieder dem Eigentlichen zu.</p>
+<p>Also vermutlich dem nächsten Nebenschauplatz, aus dem versehentlich wieder ein kleines Projekt wird.</p>
+<hr>
+<p><em>we&#x27;re not behaving like insects.</em></p>
+<p>In diesem Sinne: bleibt eigenwillig. Und habt ein erholsames, sonniges Wochenende.</p>
+<hr>
+<p>#PromptDrivenDevelopment #SpecDrivenDevelopment #VibeCoding #GitHubCopilot #AIAssistedDevelopment #Softwareentwicklung #DeveloperTools</p>
+      </section>
+
+      <footer class="author-box">
+        <h2>Über den Autor</h2>
+        <p>Benjamin Lam nutzt einen erstaunlich großen Teil des Internets, um seine Gedanken zu posten. Falls du irgendwo etwas findest, das hier noch nicht archiviert ist: her damit.</p>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>

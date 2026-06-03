@@ -11,7 +11,6 @@
    ========================================================================== */
 
 :root {
-  /* Post-it / Sticky Notes */
   --postit-yellow: #fff36d;
   --postit-pink: #ff4fa3;
   --postit-blue: #38c9f4;
@@ -20,13 +19,11 @@
   --postit-purple: #b983ff;
   --postit-peach: #ffc6a8;
 
-  /* Collegeblock */
   --paper-bg: #f7fbff;
   --grid-line: rgba(88, 147, 200, 0.18);
   --grid-line-strong: rgba(88, 147, 200, 0.28);
   --margin-line: rgba(255, 79, 163, 0.35);
 
-  /* Content */
   --article-bg: #ffffff;
   --text: #1f2933;
   --muted: #667085;
@@ -43,17 +40,13 @@
 
   --code-bg: #f5f5f5;
 
-  --max-width: 820px;
+  --max-width: 900px;
   --page-padding: 24px;
 
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
-
-/* --------------------------------------------------------------------------
-   Base
-   -------------------------------------------------------------------------- */
 
 * {
   box-sizing: border-box;
@@ -65,26 +58,25 @@ html {
   line-height: 1.5;
   color: var(--text);
   background-color: var(--paper-bg);
-
-  /* Collegeblock kariert + rote Randlinie */
   background-image:
-    linear-gradient(to right, transparent 0, transparent calc(var(--page-padding) - 2px), var(--margin-line) calc(var(--page-padding) - 2px), var(--margin-line) var(--page-padding), transparent var(--page-padding)),
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
-    linear-gradient(var(--grid-line-strong) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line-strong) 1px, transparent 1px);
+          linear-gradient(
+                  to right,
+                  transparent 0,
+                  transparent calc(var(--page-padding) - 2px),
+                  var(--margin-line) calc(var(--page-padding) - 2px),
+                  var(--margin-line) var(--page-padding),
+                  transparent var(--page-padding)
+          ),
+          linear-gradient(var(--grid-line) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+          linear-gradient(var(--grid-line-strong) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid-line-strong) 1px, transparent 1px);
   background-size:
-    100% 100%,
-    24px 24px,
-    24px 24px,
-    120px 120px,
-    120px 120px;
-  background-position:
-    0 0,
-    0 0,
-    0 0,
-    0 0,
-    0 0;
+          100% 100%,
+          24px 24px,
+          24px 24px,
+          120px 120px,
+          120px 120px;
 }
 
 body {
@@ -105,10 +97,6 @@ a:hover {
   text-decoration-thickness: 0.14em;
 }
 
-/* --------------------------------------------------------------------------
-   Layout: Mobile first
-   -------------------------------------------------------------------------- */
-
 .page {
   width: 100%;
   max-width: calc(var(--max-width) + (var(--page-padding) * 2));
@@ -116,23 +104,31 @@ a:hover {
   padding: var(--page-padding);
 }
 
-.archived-article,
-.archive-page {
-  position: relative;
+.article-page {
+  padding-top: 32px;
+  padding-bottom: 56px;
 }
 
-/* Artikelpapier */
+.archive-page {
+  padding-top: 32px;
+  padding-bottom: 56px;
+}
+
+/* --------------------------------------------------------------------------
+   Artikelpapier
+   -------------------------------------------------------------------------- */
+
 .archived-article {
+  position: relative;
   background: var(--article-bg);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 24px;
   box-shadow:
-    0 18px 50px rgba(31, 41, 51, 0.16),
-    0 2px 0 rgba(255, 255, 255, 0.8) inset;
+          0 18px 50px rgba(31, 41, 51, 0.16),
+          0 2px 0 rgba(255, 255, 255, 0.8) inset;
 }
 
-/* Kleiner Post-it-Akzent oben rechts */
 .archived-article::before {
   content: "";
   position: absolute;
@@ -171,15 +167,16 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.site-title {
-  margin: 0 0 0.5rem;
+.site-title,
+.article-title {
+  margin: 0 0 0.75rem;
   font-size: clamp(2rem, 10vw, 4rem);
   line-height: 1;
   letter-spacing: -0.055em;
 }
 
 .site-description {
-  max-width: 60ch;
+  max-width: 64ch;
   margin: 0;
   color: var(--muted);
   font-size: 1rem;
@@ -199,7 +196,7 @@ a:hover {
 }
 
 .publication-note {
-  margin: 0 0 2rem;
+  margin: 1.5rem 0 2rem;
   padding: 1rem;
   border: 1px solid var(--note-border);
   border-left: 8px solid var(--postit-yellow);
@@ -282,11 +279,6 @@ a:hover {
   font-weight: 750;
 }
 
-.article-body em,
-.article-body i {
-  font-style: italic;
-}
-
 .article-body blockquote {
   position: relative;
   margin: 2rem 0;
@@ -303,16 +295,18 @@ a:hover {
   height: 0.7rem;
   margin: 2.5rem 0;
   background:
-    linear-gradient(90deg,
-      var(--postit-yellow) 0 18%,
-      transparent 18% 21%,
-      var(--postit-pink) 21% 38%,
-      transparent 38% 42%,
-      var(--postit-blue) 42% 61%,
-      transparent 61% 65%,
-      var(--postit-green) 65% 82%,
-      transparent 82% 86%,
-      var(--postit-purple) 86% 100%);
+          linear-gradient(
+                  90deg,
+                  var(--postit-yellow) 0 18%,
+                  transparent 18% 21%,
+                  var(--postit-pink) 21% 38%,
+                  transparent 38% 42%,
+                  var(--postit-blue) 42% 61%,
+                  transparent 61% 65%,
+                  var(--postit-green) 65% 82%,
+                  transparent 82% 86%,
+                  var(--postit-purple) 86% 100%
+          );
   border-radius: 999px;
 }
 
@@ -343,7 +337,7 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   Anmerkungen und Autorbox als Post-its
+   Anmerkungen und Autorbox
    -------------------------------------------------------------------------- */
 
 .article-notes,
@@ -378,12 +372,8 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   Archivübersicht / Startseite
+   Startseite / Archivliste
    -------------------------------------------------------------------------- */
-
-.archive-page {
-  padding-top: 32px;
-}
 
 .archive-controls {
   display: grid;
@@ -494,6 +484,82 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
+   Startseiten-Footer / Social Links
+   -------------------------------------------------------------------------- */
+
+.archive-footer {
+  margin-top: 3rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(31, 41, 51, 0.08);
+}
+
+.archive-footer-intro {
+  max-width: 68ch;
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+}
+
+.archive-footer-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.archive-footer-section {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.archive-footer-section:nth-child(4n + 1) {
+  border-top: 6px solid var(--postit-yellow);
+}
+
+.archive-footer-section:nth-child(4n + 2) {
+  border-top: 6px solid var(--postit-blue);
+}
+
+.archive-footer-section:nth-child(4n + 3) {
+  border-top: 6px solid var(--postit-pink);
+}
+
+.archive-footer-section:nth-child(4n + 4) {
+  border-top: 6px solid var(--postit-green);
+}
+
+.archive-footer-section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.archive-footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.archive-footer-list a {
+  display: inline-block;
+  padding: 0.35rem 0.55rem;
+  background: var(--postit-lime);
+  border-radius: 999px;
+  color: #263500;
+  font-size: 0.92rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.archive-footer-list a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
    Utilities
    -------------------------------------------------------------------------- */
 
@@ -540,11 +606,9 @@ a:hover {
     grid-template-columns: 1.5fr 1fr;
     align-items: end;
   }
-}
 
-@media (min-width: 1080px) {
-  :root {
-    --max-width: 900px;
+  .archive-footer-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -591,7 +655,8 @@ a:hover {
 
   .archived-article,
   .archive-section,
-  .archive-controls {
+  .archive-controls,
+  .archive-footer {
     border: 0;
     box-shadow: none;
     background: #fff;

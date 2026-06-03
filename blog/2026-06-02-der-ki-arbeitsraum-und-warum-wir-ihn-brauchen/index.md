@@ -8,19 +8,25 @@ first_published: "2026-06-02"
 archived_at: "2026-06-03"
 status: "aktuell"
 tags:
-  - "KI"
-  - "Arbeitsräume"
-  - "Softwareentwicklung"
-  - "digitale Arbeit"
-  - "Handwerk"
-  - "Verantwortung"
+  - "systeme"
+  - "ki"
+  - "arbeitsraum"
+  - "coding-agenten"
+  - "verantwortung"
+  - "handwerk"
+canonical_url: "https://benjamin-lam.github.io/blog/2026-06-02-der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/"
+description: "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 02.06.2026 auf blame76.de."
 ---
 
 # Der KI-Arbeitsraum und warum wir ihn brauchen
 
+## Hinweis zur Erstveröffentlichung
+
 Dieser Artikel erschien zuerst am 02.06.2026 auf blame76.de.
 
 Original: https://blame76.de/blog/systeme/der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/
+
+## Artikel
 
 Vielleicht müsste die Überschrift eigentlich heißen:
 
@@ -460,8 +466,6 @@ Nicht, um zurückzugehen.
 
 Sondern um nicht zu vergessen, woher wir kommen, während wir herausfinden, wohin wir gehen.
 
----
-
 ## Über den Autor
 
-Benjamin Lam ist Webentwickler, technischer Generalist und schreibt über KI, Softwareentwicklung, digitale Arbeit, Systeme und die Frage, wie Menschen und Maschinen sinnvoll zusammenarbeiten können.
+Benjamin Lam nutzt einen erstaunlich großen Teil des Internets, um seine Gedanken zu posten. Falls du irgendwo etwas findest, das hier noch nicht archiviert ist: her damit.

@@ -1,20 +1,157 @@
 [
   {
+    "title": "Unter der Motorhaube: Warum moderne KI-Arbeit mehr ist als „Prompt rein, Antwort raus“",
+    "source": "LinkedIn",
+    "source_slug": "linkedin",
+    "first_published": "2026-06-02",
+    "status": "aktuell",
+    "tags": [
+      "ki",
+      "llm",
+      "prompting",
+      "entwicklung",
+      "arbeitswelt",
+      "infrastruktur"
+    ],
+    "path": "/linkedin/2026-06-02-unter-der-motorhaube-warum-moderne-ki-arbeit-mehr-ist-als-prompt-rein-antwort-raus/",
+    "canonical_url": "https://benjamin-lam.github.io/linkedin/2026-06-02-unter-der-motorhaube-warum-moderne-ki-arbeit-mehr-ist-als-prompt-rein-antwort-raus/",
+    "description": "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 02.06.2026 auf LinkedIn."
+  },
+  {
     "title": "Der KI-Arbeitsraum und warum wir ihn brauchen",
     "source": "blame76.de",
     "source_slug": "blog",
     "first_published": "2026-06-02",
     "status": "aktuell",
     "tags": [
-      "KI",
-      "Arbeitsräume",
-      "Softwareentwicklung",
-      "digitale Arbeit",
-      "Handwerk",
-      "Verantwortung"
+      "systeme",
+      "ki",
+      "arbeitsraum",
+      "coding-agenten",
+      "verantwortung",
+      "handwerk"
     ],
     "path": "/blog/2026-06-02-der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/",
     "canonical_url": "https://benjamin-lam.github.io/blog/2026-06-02-der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/",
     "description": "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 02.06.2026 auf blame76.de."
+  },
+  {
+    "title": "8 + 8 + 8 = 90",
+    "source": "LinkedIn",
+    "source_slug": "linkedin",
+    "first_published": "2026-05-28",
+    "status": "aktuell",
+    "tags": [
+      "ki",
+      "arbeitswelt",
+      "linkedin"
+    ],
+    "path": "/linkedin/2026-05-28-8-8-8-90/",
+    "canonical_url": "https://benjamin-lam.github.io/linkedin/2026-05-28-8-8-8-90/",
+    "description": "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 28.05.2026 auf LinkedIn."
+  },
+  {
+    "title": "Was ich aus einer Copilot-Session über Prompt Driven Development gelernt habe",
+    "source": "LinkedIn",
+    "source_slug": "linkedin",
+    "first_published": "2026-05-22",
+    "status": "aktuell",
+    "tags": [
+      "ki",
+      "prompting",
+      "copilot",
+      "entwicklung",
+      "arbeitswelt",
+      "kontext"
+    ],
+    "path": "/linkedin/2026-05-22-was-ich-aus-einer-copilot-session-ueber-prompt-driven-development-gelernt-habe/",
+    "canonical_url": "https://benjamin-lam.github.io/linkedin/2026-05-22-was-ich-aus-einer-copilot-session-ueber-prompt-driven-development-gelernt-habe/",
+    "description": "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 22.05.2026 auf LinkedIn."
+  },
+  {
+    "title": "✍️ Gastbeitrag von ChatGPT",
+    "source": "LinkedIn",
+    "source_slug": "linkedin",
+    "first_published": "2026-05-13",
+    "status": "aktuell",
+    "tags": [
+      "ki",
+      "entwicklung",
+      "arbeitswelt",
+      "kontext",
+      "gesellschaft",
+      "chatgpt"
+    ],
+    "path": "/linkedin/2026-05-13-gastbeitrag-von-chatgpt/",
+    "canonical_url": "https://benjamin-lam.github.io/linkedin/2026-05-13-gastbeitrag-von-chatgpt/",
+    "description": "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 13.05.2026 auf LinkedIn."
+  },
+  {
+    "title": "Zwischen Freiheit und Schutz",
+    "source": "LinkedIn",
+    "source_slug": "linkedin",
+    "first_published": "2026-05-07",
+    "status": "aktuell",
+    "tags": [
+      "ki",
+      "arbeitswelt",
+      "opensource",
+      "e-commerce",
+      "gesellschaft",
+      "linkedin"
+    ],
+    "path": "/linkedin/2026-05-07-zwischen-freiheit-und-schutz/",
+    "canonical_url": "https://benjamin-lam.github.io/linkedin/2026-05-07-zwischen-freiheit-und-schutz/",
+    "description": "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 07.05.2026 auf LinkedIn."
+  },
+  {
+    "title": "Hoch verschuldet. Und trotzdem profitabel.",
+    "source": "LinkedIn",
+    "source_slug": "linkedin",
+    "first_published": "2026-05-04",
+    "status": "aktuell",
+    "tags": [
+      "ki",
+      "entwicklung",
+      "linkedin"
+    ],
+    "path": "/linkedin/2026-05-04-hoch-verschuldet-und-trotzdem-profitabel/",
+    "canonical_url": "https://benjamin-lam.github.io/linkedin/2026-05-04-hoch-verschuldet-und-trotzdem-profitabel/",
+    "description": "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 04.05.2026 auf LinkedIn."
+  },
+  {
+    "title": "Tokens verbrannt. Limit erreicht. Keine Verbindung zum LLM.",
+    "source": "LinkedIn",
+    "source_slug": "linkedin",
+    "first_published": "2026-04-30",
+    "status": "aktuell",
+    "tags": [
+      "ki",
+      "llm",
+      "tokens",
+      "kosten",
+      "vendor-lock-in",
+      "infrastruktur"
+    ],
+    "path": "/linkedin/2026-04-30-tokens-verbrannt-limit-erreicht-keine-verbindung-zum-llm/",
+    "canonical_url": "https://benjamin-lam.github.io/linkedin/2026-04-30-tokens-verbrannt-limit-erreicht-keine-verbindung-zum-llm/",
+    "description": "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 30.04.2026 auf LinkedIn."
+  },
+  {
+    "title": "Eine Randnotiz im Strom der KI-Entwicklung – mit abgelegter Entwickler-Brille",
+    "source": "LinkedIn",
+    "source_slug": "linkedin",
+    "first_published": "2026-04-29",
+    "status": "aktuell",
+    "tags": [
+      "ki",
+      "entwicklung",
+      "arbeitswelt",
+      "kontext",
+      "linkedin"
+    ],
+    "path": "/linkedin/2026-04-29-eine-randnotiz-im-strom-der-ki-entwicklung-mit-abgelegter-entwickler-brille/",
+    "canonical_url": "https://benjamin-lam.github.io/linkedin/2026-04-29-eine-randnotiz-im-strom-der-ki-entwicklung-mit-abgelegter-entwickler-brille/",
+    "description": "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 29.04.2026 auf LinkedIn."
   }
 ]

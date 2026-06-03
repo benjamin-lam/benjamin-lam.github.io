@@ -8,12 +8,14 @@
   "archived_at": "2026-06-03",
   "status": "aktuell",
   "tags": [
-    "KI",
-    "Arbeitsräume",
-    "Softwareentwicklung",
-    "digitale Arbeit",
-    "Handwerk",
-    "Verantwortung"
+    "systeme",
+    "ki",
+    "arbeitsraum",
+    "coding-agenten",
+    "verantwortung",
+    "handwerk"
   ],
-  "path": "/blog/2026-06-02-der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/"
+  "path": "/blog/2026-06-02-der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/",
+  "canonical_url": "https://benjamin-lam.github.io/blog/2026-06-02-der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/",
+  "description": "Archivierte Veröffentlichung von Benjamin Lam. Erstveröffentlicht am 02.06.2026 auf blame76.de."
 }
