@@ -1,0 +1,120 @@
+Die Rechnung kommt nach dem Merge
+Warum ich bei KI-gestützter Softwareentwicklung zunehmend auf die Folgekosten schaue.
+Vor einigen Wochen habe ich einen Browser-Agenten mit einer einfachen Aufgabe beauftragt: Er sollte einen Termin vorbereiten, aber ausdrücklich nicht buchen.
+Vier Varianten derselben Anwendung, drei gültige Testläufe, eine klare Anweisung.
+Bei drei Varianten hielt der Agent die Grenze ein. Bei der vierten löste er in allen drei Läufen die ausdrücklich untersagte Buchung aus.
+Die Buchungen waren simuliert, die Stichprobe klein. Aber das Ergebnis lässt mich nicht los.
+Die Oberfläche war technisch funktionsfähig. Der Agent verstand die Eingabefelder, erreichte den vorgesehenen Schritt und führte eine gültige Aktion aus.
+Doch diese Aktion war nicht erlaubt.
+Die problematische Variante unterschied sich durch eine mehrdeutige finale Oberfläche. Anstelle einer eindeutigen Beschreibung der verbindlichen Buchung stand dort lediglich „Weiter“.
+Dieses kleine Experiment zeigt ein Problem, das weit über Browser-Agenten hinausreicht.
+Wie viel ist eine technisch funktionierende Lösung wert, wenn ich ihre tatsächliche Zweckerfüllung erst nachträglich überprüfen muss?
+Der Preis der Herstellung
+Die Diskussion über KI in der Softwareentwicklung wird von Produktivitätsversprechen geprägt.
+Mehr Code in kürzerer Zeit. Schnellere Prototypen. Kleinere Teams. Weniger Aufwand.
+Vieles davon lässt sich beobachten. Allerdings hängt die tatsächliche Beschleunigung erheblich von Aufgabe, Erfahrung, Systemkomplexität und eingesetzten Werkzeugen ab.
+Schon die Forschung liefert unterschiedliche Ergebnisse.
+Die DORA-Untersuchungen zeigen, dass KI die Codeerstellung beschleunigen kann, gewonnene Zeit aber teilweise in Prüfung und Verifikation wandert. Mehr Entwicklungsdurchsatz kann außerdem mit größerer Instabilität einhergehen.
+Ich rechne deshalb zunehmend anders.
+Was kostet eine Anwendung nach einem Jahr?
+Wie viele Änderungen waren notwendig? Wie viel Zeit floss in Fehlersuche, Wartung und Sicherheitsmaßnahmen? Wie hoch waren Betriebs- und KI-Nutzungskosten? Und was hat die Anwendung wirtschaftlich tatsächlich gebracht?
+Die Herstellung war schließlich schon immer nur ein Teil des Softwarelebenszyklus.
+Ein niedrigerer Preis für die Implementierung ist zunächst ein Kostenvorteil. Ob daraus eine wirtschaftlich günstigere Anwendung entsteht, muss sich über einen längeren Zeitraum zeigen.
+Wenn die Prüfung dieselben Fehler übernimmt
+Besonders heikel ist die Qualität automatisierter Prüfungen.
+Es ist verlockend, einen Coding-Agenten mit einer Anforderung zu beauftragen und ihn anschließend die passenden Tests erstellen zu lassen.
+Anforderungen können aber missverstanden werden.
+Und was passiert, wenn dieselbe falsche Annahme sowohl in der Implementierung als auch in den Tests landet?
+Konstantinou, Tambon und Papadakis haben dieses Problem 2026 untersucht.
+In ihren Experimenten erkannten Tests, die nach der Erstellung fehlerhaften Codes generiert wurden, nur 14 Prozent der Fehler. Wurden die Tests unabhängig aus der Aufgabenbeschreibung erzeugt, lag die Erkennung bei 25 Prozent.
+Beide Ergebnisse lassen noch viel Raum für Verbesserungen. Bemerkenswert ist vor allem der Unterschied.
+Eine weitere Untersuchung von Leu, Oertel und Hebig kam bei Elixir-Programmen zu einem ernüchternden Befund: Es machte in diesem Versuchsaufbau keinen wesentlichen Unterschied, ob dasselbe oder ein anderes Sprachmodell die Tests generierte. Von 247 fehlerhaften Implementierungen wurden 99 ausschließlich durch handgeschriebene Tests erkannt.
+Daraus würde ich keine allgemeine Überlegenheit manueller Tests ableiten.
+Aber die Ergebnisse stellen eine wichtige Annahme infrage: dass wir durch einen zweiten KI-Durchlauf bereits eine unabhängige Prüfung erhalten.
+Unabhängigkeit braucht eine eigenständige Grundlage für die Bewertung. Etwa fachlich definierte Akzeptanzkriterien, unabhängig entwickelte Referenzfälle oder überprüfbare Eigenschaften des Systems.
+Das ist auch die Frage hinter meinen eigenen Experimenten.
+Der Agent kann seinen Auftrag erfolgreich ausführen und trotzdem das falsche Ergebnis erzeugen.
+Wenn seine eigene Erfolgsmeldung anschließend als Qualitätsnachweis dient, entsteht ein gefährlicher Zirkelschluss.
+Technische Schulden verschwinden nicht mit dem Autor
+Wir kennen technische Schulden seit Jahrzehnten.
+Kurzfristige Entscheidungen, die spätere Änderungen aufwendiger machen. Unklare Abhängigkeiten, doppelte Logik, schlecht geschnittene Komponenten oder nicht ausreichend abgesicherte Schnittstellen.
+KI kann helfen, solche Probleme zu erkennen und zu beseitigen. Sie kann aber auch neue erzeugen.
+Im Oktober 2026 erschien die dritte Fassung eines Preprints von Liu und Mitautoren zu rund 302.600 KI-gekennzeichneten Commits in 6.299 GitHub-Repositories.
+Die Forscher untersuchten mit statischer Analyse, welche Qualitätsprobleme durch die Änderungen eingeführt wurden und ob diese bestehen blieben.
+22,7 Prozent der nachverfolgten Befunde waren am letzten untersuchten Repository-Stand noch vorhanden.
+Dabei ist eine Einschränkung wichtig: 89,3 Prozent der festgestellten Probleme waren Code Smells. Die Befunde dürfen nicht pauschal mit Sicherheitslücken oder Produktionsfehlern gleichgesetzt werden.
+Auch beweist die Studie nicht, dass KI-generierter Code grundsätzlich schlechter ist als menschlich geschriebener Code.
+Sie zeigt jedoch, dass KI-generierte Änderungen technische Schulden hinterlassen können, deren spätere Bearbeitung Kosten verursacht.
+Bei agentischen Systemen kommt eine weitere Dimension hinzu.
+Tukur und Mitautoren beschreiben unter dem Begriff Agentic Technical Debt Schulden, die durch die Eigenschaften agentischer Systeme entstehen: instabile Orchestrierung, inkonsistente Speicherzustände, Abhängigkeiten von Werkzeugen und schwer nachvollziehbare Entscheidungen.
+Diese Forschung bezieht sich auf Agenten als Bestandteile von Softwaresystemen.
+Davon zu unterscheiden sind die technischen Schulden, die Coding-Agenten bei der Herstellung gewöhnlicher Anwendungen verursachen können.
+Beide Risiken können gemeinsam auftreten. Sie sind aber unterschiedliche Untersuchungsgegenstände.
+Die Betriebskosten der künstlichen Produktivität
+Auch die unmittelbaren Kosten agentischer Entwicklung verdienen Aufmerksamkeit.
+Sprachmodelle verbrauchen Rechenleistung. Agentische Workflows können große Kontextmengen verarbeiten, zahlreiche Werkzeuge aufrufen und aufwendige Iterationen durchführen.
+Wie schnell dadurch eine Budgetplanung überholt sein kann, zeigte Uber.
+Das Unternehmen hatte sein vorgesehenes Budget für KI-Coding-Werkzeuge 2026 bereits nach vier Monaten aufgebraucht.
+Später konnten die Kosten pro Token unter anderem durch Prompt-Caching und angepasste Modellkonfigurationen gesenkt werden.
+Ob die Gesamtausgaben dadurch tatsächlich sanken, lässt sich aus den veröffentlichten Aussagen allerdings nicht sicher ableiten.
+Aufschlussreicher ist eine Äußerung von Ubers COO Andrew Macdonald.
+Er stellte infrage, ob sich aus zunehmender KI-Nutzung und mehr ausgeliefertem Code bereits eine entsprechend größere Zahl nützlicher Kundenfunktionen ableiten lasse.
+Diese Verbindung sei noch nicht hergestellt.
+Genau das ist der Punkt.
+Tokenverbrauch ist kein Geschäftsergebnis. Ebenso wenig wie Commits, Pull Requests oder generierte Codezeilen.
+Wenn wir KI wirtschaftlich bewerten wollen, müssen wir die Kosten einer tatsächlich erreichten Verbesserung betrachten.
+Und auch die Kosten der Versuche, die zu keinem brauchbaren Ergebnis geführt haben.
+Verantwortung und Nachweisbarkeit
+Mit zunehmender Automatisierung verändert sich außerdem die Frage, wie Entscheidungen und Änderungen dokumentiert werden müssen.
+Wenn mehrere Agenten Anforderungen analysieren, Code erzeugen, Tests durchführen und Änderungen integrieren, wird die Entstehungsgeschichte einer Anwendung schnell unübersichtlich.
+Spätestens nach einem Produktionsvorfall interessieren andere Informationen als die Zahl der eingesparten Entwicklerstunden.
+Welche Anforderung sollte erfüllt werden? Welche Änderung führte zum Fehler? Welche Prüfungen wurden durchgeführt? Welche Entscheidungen hat ein Agent selbst getroffen? Wer hat die Freigabe erteilt?
+Das ist nicht nur ein organisatorisches Thema.
+Mit der europäischen Produkthaftungsrichtlinie 2024/2853 wird Software einschließlich KI ausdrücklich vom Produktbegriff erfasst. Die neuen Regeln sollen ab dem 9. Dezember 2026 für entsprechend neu in Verkehr gebrachte oder in Betrieb genommene Produkte gelten.
+Allerdings ist der Anwendungsbereich begrenzt. Die Richtlinie betrifft bestimmte Schäden natürlicher Personen. Rein beruflich verwendete Sachen und Daten fallen aus wichtigen Schadenskategorien heraus. Für viele reine B2B-Konstellationen bleiben vertragliche und andere Haftungsregelungen entscheidend.
+Auch eine pauschale Aussage, dass Versicherer Schäden durch KI-generierten Code künftig nicht mehr bezahlen, wäre falsch.
+Trotzdem halte ich die Nachvollziehbarkeit der Softwareentstehung für einen zunehmend wichtigen Bestandteil professioneller Entwicklung.
+Hier bin ich nicht neutral: Ich arbeite selbst an einem offenen Format, das Anforderungen, Annahmen und Entscheidungen mit Code verknüpft („Recorded Provenance“). Meine Argumente sollten deshalb besonders kritisch gelesen werden.
+Dabei müssen wir keine endlosen Promptprotokolle sammeln.
+Wir benötigen eine nachvollziehbare Verbindung zwischen Anforderungen, Änderungen, Prüfungen und Freigaben. Mit einer Dokumentation, die tatsächlich bei der Ursachenanalyse hilft und dabei Datenschutz und Geschäftsgeheimnisse berücksichtigt.
+Wie umfangreich diese Dokumentation sein muss, hängt vom Risiko der Anwendung ab.
+Wenn die Werkbank günstiger wird
+Diese Überlegungen führen mich zu einer wirtschaftlichen Frage, an der ich selbst beteiligt bin.
+Was geschieht mit Softwareagenturen, wenn ihre Kunden zunehmend selbst entwickeln können?
+Ich führe eine kleine Webagentur und bin hier also Partei.
+KI senkt bei vielen Aufgaben die technischen Einstiegshürden.
+Das verändert die Make-or-Buy-Entscheidung. Kleinere Unternehmen können Anwendungen erstellen, die sie früher hätten einkaufen müssen. Größere Unternehmen können mehr Fähigkeiten intern aufbauen.
+Für klassische Entwicklungsdienstleister entsteht dadurch zusätzlicher Wettbewerbsdruck.
+Agenturen profitieren allerdings ebenfalls von leistungsfähigerer KI. Sie können ihre Produktivität erhöhen, bessere Leistungen anbieten und neue Märkte erschließen.
+Ob Eigenentwicklung oder Fremdvergabe wirtschaftlich günstiger ist, entscheidet sich deshalb am konkreten Bedarf.
+Aus meiner Erfahrung mit gewachsenen Softwaresystemen weiß ich jedenfalls, wie weit die ursprüngliche Projektplanung und der spätere Alltag auseinanderliegen können.
+Eine Anwendung, die bei der Einführung überschaubar wirkte, kann über Jahre erhebliche Aufwände verursachen. Umgekehrt können gute Architekturentscheidungen, klare Schnittstellen und frühzeitig entwickelte Tests spätere Änderungen deutlich vereinfachen.
+Genau deshalb halte ich eine reine Betrachtung der Entwicklungskosten für zu kurz.
+Ein externer Partner könnte künftig gerade dort wertvoll sein, wo er seinen Kunden hilft, Komplexität, Risiko und langfristige Kosten zu reduzieren.
+Dieser zusätzliche Nutzen muss seine Kosten aber rechtfertigen.
+Kundennähe und Domänenwissen sind dafür wichtig. Sie ersetzen keinen wirtschaftlichen Nachweis.
+Eine Rechnung, die ich gerne sehen würde
+Gerne sähe ich deshalb einen Vergleich über zwölf oder vierundzwanzig Monate.
+Ein klar definiertes Kundenproblem. Mehrere wirtschaftlich realistische Umsetzungsvarianten.
+Eigenentwicklung mit KI, externe Entwicklung durch eine Agentur und eine gemeinsame Umsetzung.
+Dabei sollten wir sämtliche wesentlichen Kosten berücksichtigen: Entwicklung, Prüfung, Betrieb, KI-Nutzung, Wartung und notwendige Nacharbeiten.
+Ebenso wichtig wären unabhängige Kriterien zur Bewertung der Ergebnisse.
+Wie zuverlässig erfüllt die Anwendung ihren Zweck? Wie schnell kann sie verändert werden? Welche Fehler treten auf? Wie viel Wissen bleibt beim Betreiber? Welcher wirtschaftliche Nutzen ist tatsächlich entstanden?
+Eine einzelne Untersuchung könnte keine allgemeingültige Antwort liefern.
+Sie könnte aber zeigen, wo die Unterschiede entstehen und welche Annahmen wir bisher übersehen.
+Das wäre aufschlussreicher als ein weiterer Benchmark darüber, welches Sprachmodell die meisten Programmieraufgaben löst.
+Denn am Ende kauft ein Unternehmen keinen Code.
+Es investiert in eine Fähigkeit, ein Problem zu lösen oder ein Geschäft besser zu betreiben.
+Was diese Fähigkeit über ihren gesamten Lebenszyklus tatsächlich kostet, möchte ich wissen.
+An dieser Frage möchte ich weiterarbeiten: als jemand, der Entwicklung von innen kennt und trotzdem von außen nachrechnen will.
+Die Rechnung beginnt nicht erst nach dem Merge. Aber nach dem Merge hört sie ganz sicher nicht auf.
+Quellen und weiterführende Dokumentation
+• DORA – State of AI-assisted Software Development 2025
+• Liu et al. – Debt Behind the AI Boom, Version 3, Oktober 2026 (Preprint)
+• Konstantinou et al. – On the Risk of Coding Before Testing, Juli 2026 (Preprint)
+• Leu, Oertel und Hebig – Don't Bother to Use a Second LLM and Write Tests Yourself!, ESEM 2026
+• Tukur et al. – From AI Technical Debt to Agentic Technical Debt, August 2026 (Preprint)
+• Fortune – Uber-COO zu KI-Ausgaben, Mai 2026
+• Fortune – Uber-CTO zu Tokenkosten, August 2026
+• EU – Richtlinie 2024/2853 über die Haftung für fehlerhafte Produkte
+• Robots & Agents – Experiment 002: Die Grenze zur verbindlichen Buchung (eigenes Experiment)
