@@ -19,3 +19,9 @@ Originaltexte des Autors bzw. Plattformexporte mit Datum, URL, Quellenlinks, Üb
 - Keine Titelbilder oder zusätzlichen Medien heruntergeladen. Keine Rekonstruktion oder redaktionelle Umschreibung. Abgleich gegen die vollständigen Originalplattformfassungen und Browserprüfung ausstehend.
 
 Noch offene IDs: A09, B01, C01, C03, C06, C08, C09, C10, C11, C12, C15, D03, D04.
+
+## Versionskorrektur C04 – 19.11.2026
+
+Die finale Autorenfassung `Wer_bestimmt_was_Leistung_ist_final.md` ersetzt die ursprüngliche Arbeitsfassung als Lesefassung und Textquelle. Die vorherige Version bleibt separat als Markdown erhalten. Transparenzhinweis, sieben Quellenbereiche, Danksagung und Hashtags enthalten. Einleitung und Schlussbereiche stichprobenweise mit LinkedIn abgeglichen; kein bytegenauer Plattformexport. Bildnachweis dokumentiert, Bilddatei fehlt. LinkedIn-Kommentarnachträge sind keine Bestandteile des Artikelkörpers und nicht übernommen.
+
+C02: Methodische Präzisierungen und weitere Unterschiede in der LinkedIn-Endfassung bestätigt; Originalexport noch erforderlich. D02: Medium-Schluss und Blog-Quellenanhang unterscheiden sich; Plattformfassungen getrennt halten, Medium-Originalexport noch erforderlich. Keine fehlenden Passagen redaktionell rekonstruiert.

@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-19",
-  "note": "19 vollständige vorhandene Autoren- bzw. Blogfassungen wurden lokal gespeichert. Originaltextdateien im Repository, HTML-Lesefassungen unter den Archivpfaden. Kein vollständiger Abgleich mit Plattformversionen und kein Bildimport. Bei C02 und C04 wurden Formulierungsunterschiede festgestellt. D02 stammt aus einer eigenen Blogfassung. 13 weitere Texte benötigen eine geeignete Originaldatei oder einen Plattformexport.",
+  "note": "19 vollständige vorhandene Autoren- bzw. Blogfassungen wurden lokal gespeichert. Originaltextdateien im Repository, HTML-Lesefassungen unter den Archivpfaden. Kein vollständiger Abgleich mit Plattformversionen und kein Bildimport. C04 wurde durch eine finale Autorenfassung einschließlich Transparenzhinweis und Quellen ersetzt; bei C02 bestehen noch Formulierungs- und methodische Unterschiede. D02 stammt aus einer eigenen Blogfassung. 13 weitere Texte benötigen eine geeignete Originaldatei oder einen Plattformexport.",
   "selected": 32,
   "archived_new": 19,
   "publication_links": [
@@ -256,7 +256,9 @@
       "source_provenance": "Eingefügter Text(20261020-115015).txt",
       "source_file_complete": true,
       "platform_version_comparison": "differences_found",
-      "media_status": "not_imported"
+      "media_status": "not_imported",
+      "version_note": "Plattformfassung enthält zusätzliche methodische Präzisierungen, u. a. zur Erfassung gültiger Testläufe und zur Abgrenzung von Folgekosten. Finaler Originalexport fehlt.",
+      "platform_export_needed": true
     },
     {
       "id": "C03",
@@ -281,10 +283,12 @@
       "full_text_verified": false,
       "local_path": "/linkedin/2026-10-09-wer-bestimmt-eigentlich-was-leistung-ist/",
       "source_file": "/linkedin/2026-10-09-wer-bestimmt-eigentlich-was-leistung-ist/original.md",
-      "source_provenance": "Wer bestimmt eigentlich, was Leistung ist-.md",
+      "source_provenance": "Wer_bestimmt_was_Leistung_ist_final.md",
       "source_file_complete": true,
-      "platform_version_comparison": "differences_found",
-      "media_status": "not_imported"
+      "platform_version_comparison": "final_author_file_spot_checked",
+      "media_status": "image_credit_documented_image_not_imported",
+      "previous_source_file": "/linkedin/2026-10-09-wer-bestimmt-eigentlich-was-leistung-ist/vorherige-autorenfassung.md",
+      "version_note": "Finale Autorenfassung mit Transparenzhinweis, sieben Quellenbereichen, Danksagung und Hashtags. Einleitung und Schlussabschnitte mit LinkedIn stichprobenweise abgeglichen. Kommentarnachträge nicht Bestandteil des Artikeltexts."
     },
     {
       "id": "C05",
@@ -464,7 +468,9 @@
       "source_file_complete": true,
       "platform_version_comparison": "blog_variant",
       "media_status": "not_imported",
-      "variant_source_url": "https://benjamin-lam.de/archive/beitraege/jenseits-von-vibe-coding/"
+      "variant_source_url": "https://benjamin-lam.de/archive/beitraege/jenseits-von-vibe-coding/",
+      "version_note": "Medium-Fassung enthält einen erweiterten Schluss über Verantwortung und Legacy-Code sowie Fotoangabe und Blogverweis. Die gespeicherte Blogfassung hat einen separaten Quellenanhang. Medium-Originalexport fehlt.",
+      "platform_export_needed": true
     },
     {
       "id": "D03",
