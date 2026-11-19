@@ -1,0 +1,377 @@
+{
+  "checked_on": "2026-11-19",
+  "note": "Datumsangaben aus vorheriger Auswahlliste, nicht vollständig am Original bestätigt. Abrufstatus kein Nachweis eines vollständigen Textes.",
+  "selected": 32,
+  "archived_new": 0,
+  "publication_links": [
+    {
+      "id": "P01",
+      "title": "Quelle auf.",
+      "url": "https://benjamin-lam.github.io/quelle-auf/"
+    },
+    {
+      "id": "P02",
+      "title": "Folgenreich",
+      "url": "https://folgenreich.benjamin-lam.de/"
+    },
+    {
+      "id": "P04",
+      "title": "Zuletzt online – 243",
+      "url": "https://zuletzt-online-243.pages.dev/"
+    }
+  ],
+  "articles": [
+    {
+      "id": "A01",
+      "group": "Der Ast, auf dem wir sitzen",
+      "title": "Verschiebt sich die Rolle des Entwicklers wirklich nach oben?",
+      "date": "2026-07-27",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/der-ast-auf-dem-wir-sitzen-benjamin-lam-x3c5f",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "A02",
+      "group": "Der Ast, auf dem wir sitzen",
+      "title": "Wenn Entscheidungen nicht mehr getroffen werden, sondern erscheinen",
+      "date": "2026-07-28",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/der-ast-auf-dem-wir-sitzen-benjamin-lam-qnwsf",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "A03",
+      "group": "Der Ast, auf dem wir sitzen",
+      "title": "Die technische Roadmap ist vollständig. Die menschliche nicht.",
+      "date": null,
+      "source": "LinkedIn",
+      "url": "https://lnkd.in/ee6nXxRC",
+      "source_access": "retrieval_failed",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "A04",
+      "group": "Der Ast, auf dem wir sitzen",
+      "title": "Wenn aus gut „gut genug“ wird",
+      "date": null,
+      "source": "LinkedIn",
+      "url": "https://lnkd.in/e4TcUCXa",
+      "source_access": "retrieval_failed",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "A05",
+      "group": "Der Ast, auf dem wir sitzen",
+      "title": "Die Jahre, die in der Fortschrittsgeschichte fehlen",
+      "date": null,
+      "source": "LinkedIn",
+      "url": "https://lnkd.in/e3AxtAzZ",
+      "source_access": "retrieval_failed",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "A06",
+      "group": "Der Ast, auf dem wir sitzen",
+      "title": "Bevor die KI liefert",
+      "date": null,
+      "source": "LinkedIn",
+      "url": "https://lnkd.in/eg3pS4rt",
+      "source_access": "retrieval_failed",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "A07",
+      "group": "Der Ast, auf dem wir sitzen",
+      "title": "Wer bestimmt die Bedingungen?",
+      "date": null,
+      "source": "LinkedIn",
+      "url": "https://lnkd.in/eN95TKE7",
+      "source_access": "retrieval_failed",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "A08",
+      "group": "Der Ast, auf dem wir sitzen",
+      "title": "Nachwort – Zur Sprache dieser Serie",
+      "date": null,
+      "source": "LinkedIn",
+      "url": "https://lnkd.in/en4tqDNf",
+      "source_access": "retrieval_failed",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "A09",
+      "group": "Der Ast, auf dem wir sitzen",
+      "title": "Verschiebt sich die Rolle des Entwicklers wirklich nach oben? Der Ast, auf dem wir sitzen (Update)",
+      "date": "2026-09-23",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/verschiebt-sich-die-rolle-des-entwicklers-wirklich-nach-benjamin-lam-sbxyf",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "B01",
+      "group": "Fast Forward",
+      "title": "Wer hat auf Fast Forward gedrückt?",
+      "date": "2026-10-14",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/wer-hat-auf-fast-forward-gedr%C3%BCckt-benjamin-lam-utfee",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "B02",
+      "group": "Fast Forward",
+      "title": "Fast Forward – aber wohin eigentlich?",
+      "date": "2026-10-16",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/fast-forward-aber-wohin-eigentlich-benjamin-lam-hd6ke",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "B03",
+      "group": "Fast Forward",
+      "title": "Mehr als ich brauche. Weniger als ich möchte.",
+      "date": "2026-10-17",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/mehr-als-ich-brauche-weniger-m%C3%B6chte-benjamin-lam-uavee",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "B04",
+      "group": "Fast Forward",
+      "title": "Wer hat eigentlich den Sendeschluss abgeschafft?",
+      "date": "2026-10-18",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/wer-hat-eigentlich-den-sendeschluss-abgeschafft-benjamin-lam-ujzye",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C01",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Code ohne Autor – Warum mich die KI-Debatte der Literatur nicht loslässt",
+      "date": "2026-10-31",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/code-ohne-autor-warum-mich-die-ki-debatte-der-literatur-benjamin-lam-9f5je",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C02",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Die Rechnung kommt nach dem Merge",
+      "date": "2026-10-20",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/die-rechnung-kommt-nach-dem-merge-benjamin-lam-u1pxe",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C03",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Workflow Benchmark: Was bleibt, wenn die KI immer besser wird?",
+      "date": "2026-10-13",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/workflow-benchmark-bleibt-wenn-die-ki-immer-besser-wird-benjamin-lam-vbdre",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C04",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Wer bestimmt eigentlich, was Leistung ist?",
+      "date": "2026-10-09",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/wer-bestimmt-eigentlich-leistung-ist-benjamin-lam-6sz9e",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C05",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Digitale Mündigkeit ist kein Führerschein",
+      "date": "2026-09-02",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/digitale-m%C3%BCndigkeit-ist-kein-f%C3%BChrerschein-benjamin-lam-h3twf",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C06",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Der Auftrag ist kleiner als das Schlüsselbund",
+      "date": "2026-09-02",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/der-auftrag-ist-kleiner-als-das-schl%C3%BCsselbund-benjamin-lam-aiysf",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C07",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Ich wollte meine KI austauschbar machen. Dann merkte ich, dass mein Pförtner nur den Lieferschein kontrolliert.",
+      "date": "2026-09-01",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/ich-wollte-meine-ki-austauschbar-machen-dann-merkte-dass-benjamin-lam-kdwmf",
+      "source_access": "retrieval_failed",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C08",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Ich wollte einen KI-Baukasten bauen. Übrig blieb eine Werkbank.",
+      "date": "2026-09-01",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/ich-wollte-einen-ki-baukasten-bauen-%C3%BCbrig-blieb-eine-werkbank-lam-lw9ff",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C09",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Ich wollte wissen, wie man ChatGPT für eine Firma baut. Die Frage war falsch.",
+      "date": "2026-08-30",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/ich-wollte-wissen-wie-man-chatgpt-f%C3%BCr-eine-firma-baut-benjamin-lam-fdnbf",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C10",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Auf welches Konto buche ich das?",
+      "date": "2026-08-22",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/auf-welches-konto-buche-ich-das-benjamin-lam-u0o2f",
+      "source_access": "retrieval_failed",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C11",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Die erste KI-Antwort ist noch kein Ergebnis",
+      "date": "2026-08-22",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/die-erste-ki-antwort-ist-noch-kein-ergebnis-benjamin-lam-rp7jf",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C12",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Vier Dokumente sind nicht vier Meinungen",
+      "date": "2026-08-21",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/vier-dokumente-sind-nicht-meinungen-benjamin-lam-i1rlf",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C13",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Wenn der Build grün ist, aber die Entscheidung falsch",
+      "date": "2026-08-21",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/wenn-der-build-gr%C3%BCn-ist-aber-die-entscheidung-falsch-benjamin-lam-dfnkf",
+      "source_access": "retrieval_failed",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C14",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Ich liebe One-Shot-Prompts. Aber nicht, weil sie funktionieren.",
+      "date": "2026-08-21",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/ich-liebe-one-shot-prompts-aber-nicht-weil-sie-benjamin-lam-0fxif",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "C15",
+      "group": "Weitere LinkedIn-Artikel",
+      "title": "Zwischen Workflow Redesign und meinem Schreibtisch",
+      "date": "2026-08-18",
+      "source": "LinkedIn",
+      "url": "https://de.linkedin.com/pulse/zwischen-workflow-redesign-und-meinem-schreibtisch-benjamin-lam-w15wf",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "D01",
+      "group": "Medium",
+      "title": "KI-Arbeit ist Arbeitsgestaltung",
+      "date": "2026-08-22",
+      "source": "Medium",
+      "url": "https://medium.com/@benjaminlam_46803/ki-arbeit-ist-arbeitsgestaltung-a465265a1a46",
+      "source_access": "retrieval_failed",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "D02",
+      "group": "Medium",
+      "title": "Jenseits von Vibe Coding",
+      "date": "2026-04-24",
+      "source": "Medium",
+      "url": "https://medium.com/@benjaminlam_46803/jenseits-von-vibe-coding-8bd8f89a601a",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "D03",
+      "group": "Medium",
+      "title": "Der blinde Fleck der KI-Entwicklung: Warum guter Code heute im Kontext entsteht",
+      "date": "2026-03-10",
+      "source": "Medium",
+      "url": "https://medium.com/@benjaminlam_46803/der-blinde-fleck-der-ki-entwicklung-warum-guter-code-heute-im-kontext-entsteht-a32073b3d461",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    },
+    {
+      "id": "D04",
+      "group": "Medium",
+      "title": "KI ist nicht die nächste Welle der Digitalisierung. Sie ist ihr Stresstest.",
+      "date": "2026-02-27",
+      "source": "Medium",
+      "url": "https://medium.com/@benjaminlam_46803/ki-ist-nicht-die-n%C3%A4chste-welle-der-digitalisierung-sie-ist-ihr-stresstest-558db0201899",
+      "source_access": "article_page_retrieved",
+      "archive_status": "pending_original",
+      "full_text_verified": false
+    }
+  ]
+}
