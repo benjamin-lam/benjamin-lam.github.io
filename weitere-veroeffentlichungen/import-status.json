@@ -1,8 +1,8 @@
 {
   "checked_on": "2026-11-19",
-  "note": "Datumsangaben aus vorheriger Auswahlliste, nicht vollständig am Original bestätigt. Abrufstatus kein Nachweis eines vollständigen Textes.",
+  "note": "19 vollständige vorhandene Autoren- bzw. Blogfassungen wurden lokal gespeichert. Originaltextdateien im Repository, HTML-Lesefassungen unter den Archivpfaden. Kein vollständiger Abgleich mit Plattformversionen und kein Bildimport. Bei C02 und C04 wurden Formulierungsunterschiede festgestellt. D02 stammt aus einer eigenen Blogfassung. 13 weitere Texte benötigen eine geeignete Originaldatei oder einen Plattformexport.",
   "selected": 32,
-  "archived_new": 0,
+  "archived_new": 19,
   "publication_links": [
     {
       "id": "P01",
@@ -24,13 +24,19 @@
     {
       "id": "A01",
       "group": "Der Ast, auf dem wir sitzen",
-      "title": "Verschiebt sich die Rolle des Entwicklers wirklich nach oben?",
+      "title": "Auftakt: Verschiebt sich die Rolle des Entwicklers wirklich nach oben?",
       "date": "2026-07-27",
       "source": "LinkedIn",
-      "url": "https://de.linkedin.com/pulse/der-ast-auf-dem-wir-sitzen-benjamin-lam-x3c5f",
-      "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "url": "https://www.linkedin.com/pulse/der-ast-auf-dem-wir-sitzen-benjamin-lam-x3c5f/",
+      "source_access": "author_file_with_original_url",
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-07-27-der-ast-a01-auftakt-verschiebt-sich-die-rolle-des-entwicklers-wirklich-nach-oben/",
+      "source_file": "/linkedin/2026-07-27-der-ast-a01-auftakt-verschiebt-sich-die-rolle-des-entwicklers-wirklich-nach-oben/original.md",
+      "source_provenance": "01-der-ast-auf-dem-wir-sitzen.md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "A02",
@@ -38,76 +44,118 @@
       "title": "Wenn Entscheidungen nicht mehr getroffen werden, sondern erscheinen",
       "date": "2026-07-28",
       "source": "LinkedIn",
-      "url": "https://de.linkedin.com/pulse/der-ast-auf-dem-wir-sitzen-benjamin-lam-qnwsf",
-      "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "url": "https://www.linkedin.com/pulse/der-ast-auf-dem-wir-sitzen-benjamin-lam-qnwsf/",
+      "source_access": "author_file_with_original_url",
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-07-28-der-ast-a02-wenn-entscheidungen-nicht-mehr-getroffen-werden-sondern-erscheinen/",
+      "source_file": "/linkedin/2026-07-28-der-ast-a02-wenn-entscheidungen-nicht-mehr-getroffen-werden-sondern-erscheinen/original.md",
+      "source_provenance": "02-wenn-entscheidungen-erscheinen.md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "A03",
       "group": "Der Ast, auf dem wir sitzen",
       "title": "Die technische Roadmap ist vollständig. Die menschliche nicht.",
-      "date": null,
+      "date": "2026-07-28",
       "source": "LinkedIn",
-      "url": "https://lnkd.in/ee6nXxRC",
-      "source_access": "retrieval_failed",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "url": "https://www.linkedin.com/pulse/3-der-ast-auf-dem-wir-sitzen-benjamin-lam-hhymf/",
+      "source_access": "author_file_with_original_url",
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-07-28-der-ast-a03-die-technische-roadmap-ist-vollstandig-die-menschliche-nicht/",
+      "source_file": "/linkedin/2026-07-28-der-ast-a03-die-technische-roadmap-ist-vollstandig-die-menschliche-nicht/original.md",
+      "source_provenance": "03-die-menschliche-roadmap.md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "A04",
       "group": "Der Ast, auf dem wir sitzen",
       "title": "Wenn aus gut „gut genug“ wird",
-      "date": null,
+      "date": "2026-07-30",
       "source": "LinkedIn",
-      "url": "https://lnkd.in/e4TcUCXa",
-      "source_access": "retrieval_failed",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "url": "https://www.linkedin.com/pulse/4-der-ast-auf-dem-wir-sitzen-benjamin-lam-hon5f/",
+      "source_access": "author_file_with_original_url",
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-07-30-der-ast-a04-wenn-aus-gut-gut-genug-wird/",
+      "source_file": "/linkedin/2026-07-30-der-ast-a04-wenn-aus-gut-gut-genug-wird/original.md",
+      "source_provenance": "04-wenn-aus-gut-gut-genug-wird.md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "A05",
       "group": "Der Ast, auf dem wir sitzen",
       "title": "Die Jahre, die in der Fortschrittsgeschichte fehlen",
-      "date": null,
+      "date": "2026-08-01",
       "source": "LinkedIn",
-      "url": "https://lnkd.in/e3AxtAzZ",
-      "source_access": "retrieval_failed",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "url": "https://www.linkedin.com/pulse/5-der-ast-auf-dem-wir-sitzen-benjamin-lam-tcmyf/",
+      "source_access": "author_file_with_original_url",
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-08-01-der-ast-a05-die-jahre-die-in-der-fortschrittsgeschichte-fehlen/",
+      "source_file": "/linkedin/2026-08-01-der-ast-a05-die-jahre-die-in-der-fortschrittsgeschichte-fehlen/original.md",
+      "source_provenance": "05-die-jahre-dazwischen.md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "A06",
       "group": "Der Ast, auf dem wir sitzen",
       "title": "Bevor die KI liefert",
-      "date": null,
+      "date": "2026-08-02",
       "source": "LinkedIn",
-      "url": "https://lnkd.in/eg3pS4rt",
-      "source_access": "retrieval_failed",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "url": "https://www.linkedin.com/pulse/6-der-ast-auf-dem-wir-sitzen-benjamin-lam-ojnlf/",
+      "source_access": "author_file_with_original_url",
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-08-02-der-ast-a06-bevor-die-ki-liefert/",
+      "source_file": "/linkedin/2026-08-02-der-ast-a06-bevor-die-ki-liefert/original.md",
+      "source_provenance": "06-bevor-die-ki-liefert.md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "A07",
       "group": "Der Ast, auf dem wir sitzen",
-      "title": "Wer bestimmt die Bedingungen?",
-      "date": null,
+      "title": "Wer bestimmt die Bedingungen? – Damit technischer Fortschritt nicht erst im Rückblick zur Erfolgsgeschichte wird",
+      "date": "2026-08-06",
       "source": "LinkedIn",
-      "url": "https://lnkd.in/eN95TKE7",
-      "source_access": "retrieval_failed",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "url": "https://www.linkedin.com/pulse/7-der-ast-auf-dem-wir-sitzen-benjamin-lam-ippxe/",
+      "source_access": "author_file_with_original_url",
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-08-06-der-ast-a07-wer-bestimmt-die-bedingungen-damit-technischer-fortschritt-nicht-erst-im-ruckblick-zur-erfolgsgeschichte/",
+      "source_file": "/linkedin/2026-08-06-der-ast-a07-wer-bestimmt-die-bedingungen-damit-technischer-fortschritt-nicht-erst-im-ruckblick-zur-erfolgsgeschichte/original.md",
+      "source_provenance": "07-wer-bestimmt-die-bedingungen.md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "A08",
       "group": "Der Ast, auf dem wir sitzen",
-      "title": "Nachwort – Zur Sprache dieser Serie",
-      "date": null,
+      "title": "Ein Nachwort zur Sprache dieser Serie – Warum ich von „KI“ geschrieben habe, obwohl der Begriff oft zu groß, zu ungenau und manchmal schlicht falsch ist",
+      "date": "2026-08-06",
       "source": "LinkedIn",
-      "url": "https://lnkd.in/en4tqDNf",
-      "source_access": "retrieval_failed",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "url": "https://www.linkedin.com/pulse/nachwort-der-ast-auf-dem-wir-sitzen-benjamin-lam-xmsde/",
+      "source_access": "author_file_with_original_url",
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-08-06-der-ast-a08-ein-nachwort-zur-sprache-dieser-serie-warum-ich-von-ki-geschrieben-habe-obwohl-der-begriff-oft-zu-gross-z/",
+      "source_file": "/linkedin/2026-08-06-der-ast-a08-ein-nachwort-zur-sprache-dieser-serie-warum-ich-von-ki-geschrieben-habe-obwohl-der-begriff-oft-zu-gross-z/original.md",
+      "source_provenance": "08-nachwort-sprache-der-serie.md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "A09",
@@ -117,7 +165,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/verschiebt-sich-die-rolle-des-entwicklers-wirklich-nach-benjamin-lam-sbxyf",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -128,7 +176,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/wer-hat-auf-fast-forward-gedr%C3%BCckt-benjamin-lam-utfee",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -139,8 +187,14 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/fast-forward-aber-wohin-eigentlich-benjamin-lam-hd6ke",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-10-16-fast-forward-aber-wohin-eigentlich/",
+      "source_file": "/linkedin/2026-10-16-fast-forward-aber-wohin-eigentlich/original.md",
+      "source_provenance": "Eingefügter Text(20261016-092435).txt",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "B03",
@@ -150,8 +204,14 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/mehr-als-ich-brauche-weniger-m%C3%B6chte-benjamin-lam-uavee",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-10-17-mehr-als-ich-brauche-weniger-als-ich-mochte/",
+      "source_file": "/linkedin/2026-10-17-mehr-als-ich-brauche-weniger-als-ich-mochte/original.md",
+      "source_provenance": "Eingefügtes Markdown(2).md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "B04",
@@ -161,8 +221,14 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/wer-hat-eigentlich-den-sendeschluss-abgeschafft-benjamin-lam-ujzye",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-10-18-wer-hat-eigentlich-den-sendeschluss-abgeschafft/",
+      "source_file": "/linkedin/2026-10-18-wer-hat-eigentlich-den-sendeschluss-abgeschafft/original.md",
+      "source_provenance": "Eingefügter Text(20261018-093754).txt",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "C01",
@@ -172,7 +238,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/code-ohne-autor-warum-mich-die-ki-debatte-der-literatur-benjamin-lam-9f5je",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -183,8 +249,14 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/die-rechnung-kommt-nach-dem-merge-benjamin-lam-u1pxe",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-10-20-die-rechnung-kommt-nach-dem-merge/",
+      "source_file": "/linkedin/2026-10-20-die-rechnung-kommt-nach-dem-merge/original.txt",
+      "source_provenance": "Eingefügter Text(20261020-115015).txt",
+      "source_file_complete": true,
+      "platform_version_comparison": "differences_found",
+      "media_status": "not_imported"
     },
     {
       "id": "C03",
@@ -194,7 +266,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/workflow-benchmark-bleibt-wenn-die-ki-immer-besser-wird-benjamin-lam-vbdre",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -205,8 +277,14 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/wer-bestimmt-eigentlich-leistung-ist-benjamin-lam-6sz9e",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-10-09-wer-bestimmt-eigentlich-was-leistung-ist/",
+      "source_file": "/linkedin/2026-10-09-wer-bestimmt-eigentlich-was-leistung-ist/original.md",
+      "source_provenance": "Wer bestimmt eigentlich, was Leistung ist-.md",
+      "source_file_complete": true,
+      "platform_version_comparison": "differences_found",
+      "media_status": "not_imported"
     },
     {
       "id": "C05",
@@ -216,8 +294,14 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/digitale-m%C3%BCndigkeit-ist-kein-f%C3%BChrerschein-benjamin-lam-h3twf",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-09-02-digitale-mundigkeit-ist-kein-fuhrerschein/",
+      "source_file": "/linkedin/2026-09-02-digitale-mundigkeit-ist-kein-fuhrerschein/original.md",
+      "source_provenance": "markdown(20260902-131318).md eingefügt",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "C06",
@@ -227,7 +311,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/der-auftrag-ist-kleiner-als-das-schl%C3%BCsselbund-benjamin-lam-aiysf",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -238,8 +322,14 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/ich-wollte-meine-ki-austauschbar-machen-dann-merkte-dass-benjamin-lam-kdwmf",
       "source_access": "retrieval_failed",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-09-01-ich-wollte-meine-ki-austauschbar-machen-dann-merkte-ich-dass-mein-pfortner-nur-den-lieferschein-kontrolliert/",
+      "source_file": "/linkedin/2026-09-01-ich-wollte-meine-ki-austauschbar-machen-dann-merkte-ich-dass-mein-pfortner-nur-den-lieferschein-kontrolliert/original.md",
+      "source_provenance": "markdown(1).md eingefügt",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "C08",
@@ -249,7 +339,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/ich-wollte-einen-ki-baukasten-bauen-%C3%BCbrig-blieb-eine-werkbank-lam-lw9ff",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -260,7 +350,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/ich-wollte-wissen-wie-man-chatgpt-f%C3%BCr-eine-firma-baut-benjamin-lam-fdnbf",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -271,7 +361,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/auf-welches-konto-buche-ich-das-benjamin-lam-u0o2f",
       "source_access": "retrieval_failed",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -282,7 +372,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/die-erste-ki-antwort-ist-noch-kein-ergebnis-benjamin-lam-rp7jf",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -293,7 +383,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/vier-dokumente-sind-nicht-meinungen-benjamin-lam-i1rlf",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -304,8 +394,14 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/wenn-der-build-gr%C3%BCn-ist-aber-die-entscheidung-falsch-benjamin-lam-dfnkf",
       "source_access": "retrieval_failed",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-08-21-wenn-der-build-grun-ist-aber-die-entscheidung-falsch/",
+      "source_file": "/linkedin/2026-08-21-wenn-der-build-grun-ist-aber-die-entscheidung-falsch/original.md",
+      "source_provenance": "Wenn der Build grün ist, aber die Entscheidung falsch (1).md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "C14",
@@ -315,8 +411,14 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/ich-liebe-one-shot-prompts-aber-nicht-weil-sie-benjamin-lam-0fxif",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/linkedin/2026-08-21-ich-liebe-one-shot-prompts-aber-nicht-weil-sie-funktionieren/",
+      "source_file": "/linkedin/2026-08-21-ich-liebe-one-shot-prompts-aber-nicht-weil-sie-funktionieren/original.md",
+      "source_provenance": "markdown(20260821-073740).md eingefügt",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "C15",
@@ -326,7 +428,7 @@
       "source": "LinkedIn",
       "url": "https://de.linkedin.com/pulse/zwischen-workflow-redesign-und-meinem-schreibtisch-benjamin-lam-w15wf",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -336,9 +438,15 @@
       "date": "2026-08-22",
       "source": "Medium",
       "url": "https://medium.com/@benjaminlam_46803/ki-arbeit-ist-arbeitsgestaltung-a465265a1a46",
-      "source_access": "retrieval_failed",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "source_access": "article_page_retrieved",
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/medium/2026-08-22-ki-arbeit-ist-arbeitsgestaltung/",
+      "source_file": "/medium/2026-08-22-ki-arbeit-ist-arbeitsgestaltung/original.md",
+      "source_provenance": "KI-Arbeit ist Arbeitsgestaltung (2).md",
+      "source_file_complete": true,
+      "platform_version_comparison": "not_fully_compared",
+      "media_status": "not_imported"
     },
     {
       "id": "D02",
@@ -348,8 +456,15 @@
       "source": "Medium",
       "url": "https://medium.com/@benjaminlam_46803/jenseits-von-vibe-coding-8bd8f89a601a",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
-      "full_text_verified": false
+      "archive_status": "archived_author_version",
+      "full_text_verified": false,
+      "local_path": "/medium/2026-04-24-jenseits-von-vibe-coding/",
+      "source_file": "/medium/2026-04-24-jenseits-von-vibe-coding/original.html",
+      "source_provenance": "benjamin-lam.de: public/archive/beitraege/jenseits-von-vibe-coding/index.html",
+      "source_file_complete": true,
+      "platform_version_comparison": "blog_variant",
+      "media_status": "not_imported",
+      "variant_source_url": "https://benjamin-lam.de/archive/beitraege/jenseits-von-vibe-coding/"
     },
     {
       "id": "D03",
@@ -359,7 +474,7 @@
       "source": "Medium",
       "url": "https://medium.com/@benjaminlam_46803/der-blinde-fleck-der-ki-entwicklung-warum-guter-code-heute-im-kontext-entsteht-a32073b3d461",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     },
     {
@@ -370,8 +485,11 @@
       "source": "Medium",
       "url": "https://medium.com/@benjaminlam_46803/ki-ist-nicht-die-n%C3%A4chste-welle-der-digitalisierung-sie-ist-ihr-stresstest-558db0201899",
       "source_access": "article_page_retrieved",
-      "archive_status": "pending_original",
+      "archive_status": "pending_source_file",
       "full_text_verified": false
     }
-  ]
+  ],
+  "pending": 13,
+  "existing_archive_count": 10,
+  "archive_text_count": 29
 }
