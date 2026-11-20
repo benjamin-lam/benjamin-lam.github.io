@@ -1,0 +1,74 @@
+{
+  "checked_on": "2026-11-20",
+  "note": "Web-Textansicht für alle sechs Originalseiten erreichbar; kein Nachweis eines vollständigen Originalexports. Direkter HTML-Download in Dateiumgebung fehlgeschlagen. Zusätzliche Titel getrennt von ursprünglicher Auswahl, keine Umnummerierung. Keine Veröffentlichung, keine Änderung des ursprünglichen Importstatus.",
+  "linkedin": {
+    "selected": 28,
+    "export_files_verified_byte_exact": 28,
+    "import_package": "linkedin-archiv-import-2026-11-20.zip",
+    "repository_import_applied": false
+  },
+  "articles": [
+    {
+      "id": "D01",
+      "title": "KI-Arbeit ist Arbeitsgestaltung",
+      "date": "2026-08-22",
+      "url": "https://medium.com/@benjaminlam_46803/ki-arbeit-ist-arbeitsgestaltung-a465265a1a46",
+      "web_text_accessible": true,
+      "original_html_archived": false,
+      "medium_version_verified": false,
+      "author_source_status": "existing_author_version"
+    },
+    {
+      "id": "D02",
+      "title": "Jenseits von Vibe Coding",
+      "date": "2026-04-24",
+      "url": "https://medium.com/@benjaminlam_46803/jenseits-von-vibe-coding-8bd8f89a601a",
+      "web_text_accessible": true,
+      "original_html_archived": false,
+      "medium_version_verified": false,
+      "author_source_status": "existing_author_version"
+    },
+    {
+      "id": "D03",
+      "title": "Der blinde Fleck der KI-Entwicklung: Warum guter Code heute im Kontext entsteht",
+      "date": "2026-03-10",
+      "url": "https://medium.com/@benjaminlam_46803/der-blinde-fleck-der-ki-entwicklung-warum-guter-code-heute-im-kontext-entsteht-a32073b3d461",
+      "web_text_accessible": true,
+      "original_html_archived": false,
+      "medium_version_verified": false,
+      "author_source_status": "missing"
+    },
+    {
+      "id": "D04",
+      "title": "KI ist nicht die nächste Welle der Digitalisierung. Sie ist ihr Stresstest.",
+      "date": "2026-02-27",
+      "url": "https://medium.com/@benjaminlam_46803/ki-ist-nicht-die-n%C3%A4chste-welle-der-digitalisierung-sie-ist-ihr-stresstest-558db0201899",
+      "web_text_accessible": true,
+      "original_html_archived": false,
+      "medium_version_verified": false,
+      "author_source_status": "missing"
+    },
+    {
+      "id": "additional-01",
+      "title": "Der KI-Arbeitsraum und warum wir ihn brauchen",
+      "date": "2026-06-02",
+      "url": "https://medium.com/@benjaminlam_46803/der-ki-arbeitsraum-und-warum-wir-ihn-brauchen-362790b52290",
+      "web_text_accessible": true,
+      "original_html_archived": false,
+      "medium_version_verified": false,
+      "author_source_status": "author_source_only",
+      "author_source_path": "medium/2026-06-02-der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/autorenversion.md",
+      "source_note": "Aus gespeicherter semantisch ausgezeichneter Markdown-Autorenfassung; Medium enthält zusätzlich einen Abschnitt Über den Autor; keine Gleichsetzung mit Plattformfassung."
+    },
+    {
+      "id": "additional-02",
+      "title": "Context-Verified Development (CVD) — oder: Warum Code zum flüchtigen Abfallprodukt wird",
+      "date": "2026-06-05",
+      "url": "https://medium.com/@benjaminlam_46803/context-verified-development-cvd-oder-warum-code-zum-fl%C3%BCchtigen-abfallprodukt-wird-4053765301b3",
+      "web_text_accessible": true,
+      "original_html_archived": false,
+      "medium_version_verified": false,
+      "author_source_status": "missing"
+    }
+  ]
+}
