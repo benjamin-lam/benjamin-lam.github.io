@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jenseits von Vibe Coding</title>
+<meta name="description" content="Jenseits von Vibe Coding">
+<link rel="canonical" href="https://benjamin-lam.de/archive/beitraege/jenseits-von-vibe-coding/">
+<link rel="stylesheet" href="/archive/archive.css">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Jenseits von Vibe Coding",
+    "mainEntityOfPage": "https://benjamin-lam.de/archive/beitraege/jenseits-von-vibe-coding/",
+    "datePublished": "2026-04-24T07:52:57Z",
+    "dateModified": "2026-04-24T07:52:57Z",
+    "author": {
+        "@type": "Person",
+        "name": "benjamin"
+    }
+}
+</script>
+</head>
+<body><main><article><header><h1>Jenseits von Vibe Coding</h1></header>
+<h2>Warum das beste LLM allein den Durchbruch nicht bringt</h2>&#13;
+Erinnert ihr euch noch an die Goldgräberstimmung vor 18 Monaten? Wir haben uns Nächte um die Ohren geschlagen, um den „perfekten Prompt“ zu finden. Wir haben Prompt Engineering betrieben, als wäre es Alchemie – ein bisschen „Step-by-step“, eine Prise „Du bist ein Senior-Experte“, und hoffen, dass das Gold unten rauskommt.&#13;
+&#13;
+Dann kam das Vibe Coding: Einfach mal locker in den Editor quatschen, die KI machen lassen und schauen, ob der „Vibe“ stimmt. Andrej Karpathy, Mitbegründer von OpenAI, hatte diesen Begriff im Februar 2025 geprägt und damit eine Entwicklung auf den Punkt gebracht, die längst im Gange war: Der Entwickler gibt die Vision vor, die KI übernimmt die Implementierung. Das war spaßig, es war befreiend, aber seien wir ehrlich: Es war die handwerkliche Phase der KI-Revolution. Es war das digitale Äquivalent zum Malen nach Zahlen.&#13;
+<h3>Die Ära der isolierten Werkzeuge ist vorbei</h3>&#13;
+Wir müssen diese Werkzeuge – vom perfekten Prompt bis zum PDD – als das sehen, was sie waren: Lernphasen. Wir haben gelernt, mit der Maschine zu korrespondieren. Aber wer glaubt, dass die Reise damit endet, dass wir immer schlauere Prompts in immer größere Chatfenster tippen, der hat den Kern der Entwicklung noch nicht erfasst.&#13;
+&#13;
+Die Zukunft der Softwareentwicklung entscheidet sich nicht an der Frage, ob du GPT-5, Claude 4 oder Llama nutzt. Das LLM ist austauschbar geworden – es ist der Motor, aber nicht das Auto.&#13;
+<h3>Es zählt nicht das LLM allein, sondern das Gesamtsystem</h3>&#13;
+Der entscheidende Punkt ist: Nicht das beste Modell entscheidet über den Erfolg, sondern das beste Gesamtsystem.&#13;
+&#13;
+Das ist keine bloße Behauptung, sondern eine der am härtesten belegten Erkenntnisse der jüngeren KI-Forschung. Andrew Ng, einer der einflussreichsten Köpfe auf diesem Gebiet, hat in mehreren viel beachteten Vorträgen gezeigt, dass die Einbettung eines Modells in einen agentischen Workflow dessen Leistung weit stärker verbessert als der Wechsel auf ein nominell leistungsfähigeres Modell. In seinem HumanEval-Benchmark erreichte GPT-3.5 ohne agentische Unterstützung eine Korrektheit von 48,1%. GPT-4 kam im Zero-Shot-Verfahren auf 67,0%. Doch GPT-3.5, eingebettet in einen iterativen Agenten-Workflow, erzielte 95,1% – und übertraf damit das wesentlich modernere Modell um Längen. Ng selbst brachte es auf die Formel: Der Sprung von GPT-3.5 zu GPT-4 wird durch die Integration eines iterativen Agenten-Workflows in den Schatten gestellt.&#13;
+&#13;
+Die Landschaft liefert die Bestätigung im großen Maßstab: Frameworks wie LangGraph, CrewAI und AutoGPT etablieren genau diese Architektur – Systeme, die Aufgaben autonom planen, iterieren, reflektieren und korrigieren. Es ist ein technologischer Shift, der den Fokus endgültig vom Modell auf das System verschiebt.&#13;
+&#13;
+Wir bewegen uns weg von der isolierten Intelligenz hin zu einer symbiotischen Mensch-Maschine-Vereinigung. Es geht um ein hocheffizientes Trio:&#13;
+&#13;
+<strong>Das Denken (Mensch):</strong> Wir liefern die Intention, die Architektur und das ethische sowie wirtschaftliche Framework. Wir sind die Strategen.&#13;
+&#13;
+<strong>Das Ausführen (KI-Agenten):</strong> Die Maschine übernimmt die fehleranfällige Kleinarbeit, das Refactoring und die Boilerplate-Schlachten.&#13;
+&#13;
+<strong>Das Toolset (Infrastruktur):</strong> Die nahtlose Integration in unsere IDEs, CI/CD-Pipelines und Monitoring-Tools.&#13;
+&#13;
+Wenn diese drei Rädchen nicht perfekt ineinandergreifen, nützt dir auch das schlauste Modell der Welt nichts. Ein brillanter Motor in einem Auto ohne Räder bringt dich nicht von Bremen nach Hamburg.&#13;
+<h3>Die schleichende Standardisierung der Modelle</h3>&#13;
+Die Austauschbarkeit des Motors ist längst kein theoretisches Szenario mehr. In der LMSYS Chatbot Arena, dem derzeit wohl aussagekräftigsten Benchmark für Sprachmodelle, liegen die führenden Systeme dicht beieinander: Claude 3.5 Sonnet führt mit einem Elo-Wert von 1308, dicht gefolgt von GPT-4o (1302) und Gemini 1.5 Pro (1290). Die Abstände sind so gering, dass sie für die praktische Entwicklungsarbeit kaum noch eine Rolle spielen. Das Modell wird zur austauschbaren Ware – zur „Commodity“. Der Wert entsteht nicht mehr durch die Wahl des richtigen Anbieters, sondern durch die Intelligenz der Integration: durch Retrieval Augmented Generation, durch kontextsensitive Tool-Nutzung, durch durchdachte Systemarchitektur.&#13;
+<h3>Die stille Weichenstellung: Wer baut dein System?</h3>&#13;
+Genau dieses Gesamtsystem wird jetzt gebaut – die Frage ist nur: von wem?&#13;
+&#13;
+Die großen KI-Anbieter arbeiten mit Hochdruck an einer Zukunft, in der Agenten, Skills und Deep Reasoning nahtlos miteinander verzahnt sind. GitHub Copilot Workspace etwa ist der Prototyp eines geschlossenen Ökosystems, in dem die KI die gesamte Pipeline kontrolliert – von der Idee über den Code bis zum Pull Request, alles in natürlicher Sprache. Code wird automatisch mit Tests versehen, durchläuft Iterationen und Validierungsschleifen, bevor ein Entwickler überhaupt einen Blick darauf wirft. Die IDE denkt mit, die Pipeline korrigiert, der Agent antizipiert. Das sind keine isolierten LLM-Features mehr – das ist ein durchdesigntes Ökosystem, das uns schrittweise an die Hand nimmt. Bequem, effizient, produktiv.&#13;
+&#13;
+Und genau hier liegt die Gefahr: der schleichende Vendor Lock-in. Wir gewöhnen uns an eine nahtlose Erfahrung und geben dafür Stück für Stück die Kontrolle über unseren Stack ab. Aus der Symbiose wird Abhängigkeit. Die Frage, die sich jede und jeder stellen muss, lautet: Will ich Anwender in einem fremden System sein? Oder schaffe ich mein eigenes?&#13;
+&#13;
+Die gute Nachricht: Noch sind nicht alle Wege verbaut. Die Entwicklung lokaler Modelle hat in den letzten Monaten eine Dynamik entfaltet, die selbst Optimisten überrascht hat. Modelle wie Llama 3 oder Mistral lassen sich mit Tools wie Ollama oder LM Studio auf handelsüblichen Laptops ausführen – und liefern Ergebnisse, die für viele professionelle Coding-Aufgaben völlig ausreichen. Ja, ein lokaler Tech-Stack verlangt heute noch ein Quäntchen mehr Geduld. Aber wer hätte vor zwei Jahren gedacht, dass leistungsfähige LLMs flüssig auf unseren Notebooks laufen? Ich gebe zu, ich war mir sicher, dass das kommt. Und wer heute beobachtet, wie schnell sich lokale Modelle, offene Orchestrierungs-Frameworks und community-getriebene Toolchains entwickeln, der spürt: Die Möglichkeiten sind nicht nur absehbar – sie sind zum Greifen nah.&#13;
+<h3>Mein Denkanstoß für die kommende Zeit</h3>&#13;
+Hör auf, dem nächsten „Wunder-Prompt“ hinterherzujagen. Fang an zu überlegen: Wie sieht <em>mein</em> persönlicher Tech-Stack der Symbiose aus? Wie integriere ich das Denken und das Ausführen so, dass ein stabiler Workflow entsteht, der auch dann noch steht, wenn das nächste Modell um die Ecke kommt? Und vor allem: Wem vertraue ich die Architektur meines Systems an – einem Anbieter oder mir selbst?&#13;
+&#13;
+Butter bei die Fische: Die Technik der Vergangenheit war das „Was“. Die Zukunft ist das „Wie“ im großen Systemzusammenhang. Und die entscheidende Weiche für dieses „Wie“ stellen wir jetzt.&#13;
+<h3>Quellen</h3>&#13;
+<ul>&#13;
+ 	<li>
+<strong>Andrej Karpathy</strong> – Prägung und Popularisierung des Begriffs „Vibe Coding“ (2025, u. a. in Vorträgen und Social Media Beiträgen)</li>&#13;
+ 	<li>
+<strong>Andrew Ng</strong> – Vorträge und Veröffentlichungen zu „Agentic Workflows“ und der These, dass Systemdesign (Workflows, Iteration, Tooling) wichtiger ist als das einzelne Modell</li>&#13;
+ 	<li>
+<strong><a href="https://chat.lmsys.org/" target="_blank" rel="noopener">LMSYS</a></strong> – Chatbot Arena Benchmark (Elo-Ranking von LLMs)</li>&#13;
+ 	<li>
+<strong><a href="https://github.com/langchain-ai/langgraph" target="_blank" rel="noopener">LangGraph</a></strong> – Framework zur Orchestrierung von zustandsbasierten Agenten-Workflows</li>&#13;
+ 	<li>
+<strong><a href="https://github.com/joaomdmoura/crewAI" target="_blank" rel="noopener">CrewAI</a></strong> – Framework für kollaborierende KI-Agenten</li>&#13;
+ 	<li>
+<strong><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener">AutoGPT</a></strong> – Frühes Open-Source-Projekt für autonome KI-Agenten</li>&#13;
+ 	<li>
+<strong><a href="https://githubnext.com/projects/copilot-workspace/" target="_blank" rel="noopener">GitHub Copilot Workspace</a></strong> – Konzept eines integrierten, KI-gestützten Entwicklungs-Workflows</li>&#13;
+ 	<li>
+<strong><a href="https://ai.meta.com/llama/" target="_blank" rel="noopener">Llama 3</a></strong> – Open-Source-Sprachmodell von Meta</li>&#13;
+ 	<li>
+<strong><a href="https://mistral.ai/" target="_blank" rel="noopener">Mistral</a></strong> – Europäische KI-Modelle, optimiert für lokale Ausführung</li>&#13;
+ 	<li>
+<strong><a href="https://ollama.com/" target="_blank" rel="noopener">Ollama</a></strong> – Tool zum lokalen Ausführen von Sprachmodellen</li>&#13;
+ 	<li>
+<strong><a href="https://lmstudio.ai/" target="_blank" rel="noopener">LM Studio</a></strong> – Desktop-Anwendung für lokale LLMs</li>&#13;
+ 	<li>
+<strong><a href="https://benjamin-lam.de/" target="_blank" rel="noopener">Eigener Artikel: „Prompt Driven Development (PDD) – Ein Manifest gegen das bequeme Raten“</a></strong> – Blog von Benjamin Lam</li>&#13;
+</ul>
+</article></main></body>
+</html>

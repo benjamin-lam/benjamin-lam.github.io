@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wenn der Build grün ist, aber die Entscheidung falsch | Benjamin Lam</title><meta name="description" content="Archivierte Autorenfassung von Benjamin Lam."><link rel="canonical" href="https://benjamin-lam.github.io/linkedin/2026-08-21-wenn-der-build-grun-ist-aber-die-entscheidung-falsch/"><meta name="author" content="Benjamin Lam"><meta name="robots" content="index,follow"><meta property="og:type" content="article"><meta property="og:title" content="Wenn der Build grün ist, aber die Entscheidung falsch"><meta property="og:url" content="https://benjamin-lam.github.io/linkedin/2026-08-21-wenn-der-build-grun-ist-aber-die-entscheidung-falsch/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Wenn der Build grün ist, aber die Entscheidung falsch","datePublished":"2026-08-21","dateModified":"2026-11-19","author":{"@type":"Person","name":"Benjamin Lam"},"url":"https://benjamin-lam.github.io/linkedin/2026-08-21-wenn-der-build-grun-ist-aber-die-entscheidung-falsch/","isBasedOn":"https://de.linkedin.com/pulse/wenn-der-build-gr%C3%BCn-ist-aber-die-entscheidung-falsch-benjamin-lam-dfnkf","inLanguage":"de"}</script><link rel="stylesheet" href="/assets/css/archive.css"></head>
+<body><main class="page article-page"><a class="back-link" href="/">← Zurück zum Archiv</a><article class="archived-article"><header class="article-header"><h1 class="article-title">Wenn der Build grün ist, aber die Entscheidung falsch</h1><div class="publication-note"><p>Veröffentlicht am 21.08.2026 auf LinkedIn.</p><p>Autorenfassung aus dem persönlichen Textbestand; vollständiger Abgleich mit der veröffentlichten Fassung steht aus. Titelbild und Medien ggf. nicht enthalten. <a href="https://de.linkedin.com/pulse/wenn-der-build-gr%C3%BCn-ist-aber-die-entscheidung-falsch-benjamin-lam-dfnkf">Plattformfassung</a> · <a href="original.md">Textquelle (MD)</a></p></div></header><section class="article-body">
+<p><strong>Coding-Agenten können heute Repositories analysieren, Implementierungen planen, Dateien ändern, Shell-Befehle ausführen, Tests reparieren und Aufgaben parallel bearbeiten. Damit wächst aber auch die Zahl der Entscheidungen, die zwischen Anforderung und fertigem Code getroffen werden, bevor ein Mensch sie überhaupt sieht. Ein kleiner Fehler aus einem One-Shot-Experiment zeigt, warum genau diese Entscheidungen zum neuen Review-Gegenstand werden könnten.</strong></p>
+<p>Der Fehler war unspektakulär.</p>
+<p>Eine kleine Anwendung sollte vorhandene Review-Dateien nicht überschreiben. Wenn bereits ein <code>editorial-review.md</code> existierte, sollte beim nächsten Durchlauf eine neue Datei entstehen.</p>
+<p>Der Coding-Agent setzte die Anforderung sauber um.</p>
+<p>Nach dem zweiten Durchlauf lagen zwei Dateien im Projekt:</p>
+<pre><code>editorial-review.md
+editorial-review-2.md</code></pre>
+<p>Keine Datei wurde überschrieben. Die Tests waren grün.</p>
+<p>Nur verwendete der nächste Verarbeitungsschritt wieder <code>editorial-review.md</code>.</p>
+<p>Der neuere Review existierte, wurde aber ignoriert.</p>
+<p>Im anschließenden Produkttest wurde genau dieses Verhalten als schwerwiegender Fehler eingestuft: Neue Review-Varianten wurden korrekt erzeugt, Tree, Checks und der nächste Rewrite blieben jedoch beim ersten kanonischen Dateinamen.</p>
+<p>Das Interessante daran ist nicht der Bug.</p>
+<p>Interessant ist, dass auf dem Weg dorthin erstaunlich viel <strong>richtig</strong> war.</p>
+<p>Die Anforderung „nicht überschreiben“ wurde erfüllt. Die Implementierung war konsistent. Die vorhandenen Tests bestanden. Die nicht-destruktive Dateierzeugung funktionierte.</p>
+<p>Falsch war eine Entscheidung, die ich nie ausdrücklich getroffen hatte.</p>
+<p>Was ich geschrieben hatte, war:</p>
+<blockquote><p>Bestehende Reviews dürfen nicht überschrieben werden.</p></blockquote>
+<p>Was ich gemeint hatte, war zusätzlich:</p>
+<blockquote><p>Die neu erzeugte Variante wird anschließend zur aktuell relevanten Variante.</p></blockquote>
+<p>Der zweite Satz stand nur nicht da.</p>
+<h2>Der Fehler liegt eine Ebene vor dem Code</h2>
+<p>Das ist ein altes Problem der Softwareentwicklung. Anforderungen sind unvollständig, Begriffe mehrdeutig und Menschen setzen gemeinsames Vorwissen voraus. Entwickler treffen während der Umsetzung ständig kleine Entscheidungen, die in keinem Ticket stehen.</p>
+<p>Neu ist nicht, dass solche Lücken existieren.</p>
+<p>Neu ist, <strong>wie schnell und wie weit sie heute durch einen Entwicklungsprozess laufen können, bevor wieder ein Mensch eingreift.</strong></p>
+<p>Mein eigener KI-Workflow begann 2022 und 2023 noch mit sehr sichtbarer Handarbeit: Code aus der IDE ins Chatfenster kopieren, Antwort lesen, zurückkopieren, ausprobieren, Fehlermeldung wieder in den Chat tragen.</p>
+<p>Später ließ ich im Chat Anforderungen und Spezifikationen ausarbeiten und endete regelmäßig mit dem Satz:</p>
+<blockquote><p>Erstelle daraus bitte einen Prompt, den ich 1:1 an Codex weitergeben kann.</p></blockquote>
+<p>Ich war die Schnittstelle zwischen den Systemen.</p>
+<p>Heute kann ein Coding-Agent einen erheblichen Teil dieser Strecke selbst zurücklegen.</p>
+<p>Damit verschwinden die Entscheidungen nicht. Es verschwinden zunächst die Stellen, an denen ich sie zwangsläufig bemerken musste.</p>
+<h2>Vom Codevorschlag zur delegierten Aufgabe</h2>
+<p>Als GitHub Copilot 2021 als Technical Preview startete, war der Aktionsradius noch überschaubar: Das System nutzte den aktuellen Code als Kontext und schlug beim Schreiben einzelne Zeilen oder ganze Funktionen vor. Der Entwickler schrieb, Copilot ergänzte.</p>
+<p>Mit ChatGPT kam Ende 2022 der dialogische Schritt hinzu. Code konnte außerhalb der IDE diskutiert und debuggt werden. Der Kontext wurde größer, aber der Mensch musste ihn weitgehend selbst auswählen und zwischen Entwicklungsumgebung und Modell transportieren.</p>
+<p>Mit Coding-Agenten verschob sich diese Grenze grundlegend. Aktuelle Agentensysteme können selbst relevante Dateien suchen, mehrere Dateien verändern, Shell-Befehle aufrufen und ihre Arbeit anhand von Test-, Linter- oder Build-Ergebnissen korrigieren. OpenAI beschreibt den Kern von Codex ausdrücklich als „Agent Loop“, der die Interaktion zwischen Benutzer, Modell und Werkzeugen orchestriert.</p>
+<p>2026 kommt zunehmend Parallelisierung dazu. Die Codex-App ist darauf ausgelegt, mehrere Agenten in getrennten Threads und isolierten Git-Worktrees parallel an Projekten arbeiten zu lassen. Damit wird nicht nur Codegenerierung parallelisiert, sondern potenziell auch Exploration, Implementierung und Gegenprüfung.</p>
+<p>Aus „ergänze diesen Code“ ist damit innerhalb weniger Jahre „bearbeite diese Aufgabe“ geworden.</p>
+<p>Das vergrößert nicht nur den Umfang dessen, was die KI erledigen kann.</p>
+<p>Es vergrößert auch den Raum, in dem sie selbst Entscheidungen treffen muss.</p>
+<h2>Der Agent implementiert nicht nur – er füllt Lücken</h2>
+<p>Ein aktueller Agentenlauf besteht technisch aus Schleifen. Das Modell bekommt Kontext, entscheidet über den nächsten Schritt, benutzt gegebenenfalls ein Werkzeug, nimmt dessen Ergebnis wieder in den Kontext auf und entscheidet weiter.</p>
+<p>Dabei entstehen zwangsläufig Entscheidungen:</p>
+<p>Welche Dateien sind relevant?</p>
+<p>Welche vorhandene Architektur wird fortgesetzt?</p>
+<p>Welche Bibliothek wird verwendet?</p>
+<p>Wie wird ein nicht vollständig beschriebener Zustand modelliert?</p>
+<p>Welcher Test repräsentiert eine Anforderung?</p>
+<p>Und was folgt aus einem fehlgeschlagenen Test?</p>
+<p>Das sind nicht zwangsläufig große Architekturentscheidungen. Oft sind es kleine Dinge.</p>
+<p>In meinem Beispiel war eine davon:</p>
+<blockquote><p>Wie finde ich den aktuellen Review?</p></blockquote>
+<p>Eine plausible Antwort lautet:</p>
+<blockquote><p>Über den kanonischen Pfad <code>editorial-review.md</code>.</p></blockquote>
+<p>Eine andere:</p>
+<blockquote><p>Über die zuletzt erzeugte Variante.</p></blockquote>
+<p>Eine dritte:</p>
+<blockquote><p>Über eine explizit gespeicherte Referenz auf den aktiven Review.</p></blockquote>
+<p>Alle drei sind technisch denkbar.</p>
+<p>Meine Anforderung beantwortete die Frage nicht.</p>
+<p>Der Agent musste sie trotzdem beantworten, um Software zu bauen.</p>
+<h2>Specs helfen – aber sie verschieben die Prüfung</h2>
+<p>Es ist deshalb kein Zufall, dass moderne Coding-Werkzeuge wieder stärker mit strukturierten Spezifikationen arbeiten.</p>
+<p>GitHubs Spec Kit strukturiert einen Workflow über Spec, Plan, Tasks und Implementierung. Ergänzende Schritte können unklare Anforderungen vor der Planung klären oder später Konflikte und Lücken zwischen <code>spec.md</code>, <code>plan.md</code> und <code>tasks.md</code> suchen.</p>
+<p>Kiro erzeugt ebenfalls Requirements, Design und konkrete Tasks. Im normalen Spec-Workflow können diese Artefakte zwischen den Phasen geprüft werden. Beim aktuellen Quick-Spec-Modus beantwortet der Benutzer zunächst Rückfragen; Requirements, Design und Tasks werden anschließend automatisch in einem Durchgang erzeugt, ohne Freigabe zwischen den Phasen. Kiro empfiehlt die Variante entsprechend eher für gut verstandene Aufgaben und explizite Review-Gates bei unbekanntem oder kritischem Terrain.</p>
+<p>Das reduziert Mehrdeutigkeit.</p>
+<p>Interessant wird es dort, wo derselbe Agent auch die Zwischenartefakte erzeugt.</p>
+<p>Aus einer unvollständigen Anforderung kann zunächst eine plausible Requirement werden. Daraus entsteht ein dazu passendes Design, anschließend passende Tasks, Code und schließlich Tests.</p>
+<p>Am Ende können sämtliche Artefakte miteinander konsistent sein.</p>
+<p>Nur die erste Annahme war falsch.</p>
+<p>Specs lösen dieses Problem deshalb nicht automatisch. Sie schaffen zusätzliche Stellen, an denen wir Annahmen prüfen <strong>können</strong> – sofern wir diese Stellen nicht ebenfalls vollständig überspringen.</p>
+<h2>Ein Test kann eine falsche Interpretation perfekt bestätigen</h2>
+<p>Tests bleiben für agentische Entwicklung unverzichtbar. Vielleicht werden sie sogar wichtiger, weil sie dem Agenten ein maschinenlesbares Feedbacksignal geben: Test ausführen, Ergebnis interpretieren, Implementierung korrigieren, erneut testen.</p>
+<p>Aber ein Test weiß nicht, was ich gemeint habe.</p>
+<p>Er weiß, welche Bedingung er prüfen soll.</p>
+<p>Bei meinem Review-Beispiel könnte ein vollkommen korrekter Test feststellen:</p>
+<pre><code>Vorhandene Review-Datei bleibt unverändert.
+Neue Review-Datei wird zusätzlich erzeugt.</code></pre>
+<p>Beide Bedingungen sind erfüllt.</p>
+<p>Der Test sagt nichts darüber, welche Datei anschließend als aktuell gelten soll.</p>
+<p>Eine interessante Parallele liefert die Diskussion um SWE-bench Verified. OpenAI stellte im Februar 2026 die Nutzung des Benchmarks für Frontier-Modellvergleiche ein und verwies unter anderem auf fehlerhafte Tests sowie Aufgaben, bei denen mehrere vernünftige Interpretationen möglich waren, die Tests jedoch nur eine davon akzeptierten.</p>
+<p>Das ist kein Beweis für mein konkretes Agentenproblem.</p>
+<p>Aber es illustriert denselben grundlegenden Unterschied:</p>
+<p><strong>Aufgabenbeschreibung, tatsächliche Intention und automatisierte Prüfung sind drei verschiedene Dinge.</strong></p>
+<p>Sie können übereinstimmen.</p>
+<p>Sie müssen es nicht.</p>
+<h2>Grün war auch mein Build</h2>
+<p>Im getesteten MVP bestanden 13 Unit-Tests. Typecheck und Compile waren erfolgreich. Das später rekonstruierte Worklog schätzte den entsprechenden menschlichen Entwicklungsaufwand auf 17 bis 25 Stunden.</p>
+<p>Trotzdem fanden sich im anschließenden Produkttest zwei strukturell ähnliche Fehler.</p>
+<p>Neben den ignorierten neuen Reviews gab es eine zweite Mehrdeutigkeit beim Projektstatus.</p>
+<p>Nach einer bereits erzeugten Zielfassung wurde wieder an einem neuen Draft gearbeitet. Das Projekt selbst speicherte korrekt:</p>
+<pre><code>stage: draft
+activeDocument: first-draft-2.md</code></pre>
+<p>Die Oberfläche zeigte dagegen weiterhin „Zielfassung“.</p>
+<p>Auch dafür gibt es zwei plausible Interpretationen von „aktueller Status“:</p>
+<blockquote><p>Woran arbeitet der Benutzer gerade?</p></blockquote>
+<p>oder:</p>
+<blockquote><p>Wie weit ist das Projekt bisher maximal gekommen?</p></blockquote>
+<p>Die Implementierung entschied sich für die zweite Variante. Für die Benutzerführung hatte ich die erste gemeint.</p>
+<p>Auch hier war der Code nicht zufällig kaputt.</p>
+<p>Er beantwortete nur eine offene Frage anders als ich.</p>
+<p>Genau diese Fehlerklasse finde ich inzwischen interessanter als einen Build, der einfach rot wird.</p>
+<h2>Aktivitätslogs beantworten die falsche Hälfte der Frage</h2>
+<p>Coding-Agenten liefern schon heute erheblich mehr Nachweise als ein klassisches Chatfenster. Diffs, Terminalausgaben, Tests, Sessions und parallele Arbeitsstränge lassen sich nachvollziehen. Die Codex-App beispielsweise macht Änderungen pro Agent sichtbar und ermöglicht die Prüfung isolierter Worktrees.</p>
+<p>Das beantwortet vor allem:</p>
+<blockquote><p><strong>Was hat der Agent getan?</strong></p></blockquote>
+<p>Bei einem längeren Agentenlauf brauche ich zunehmend noch eine zweite Antwort:</p>
+<blockquote><p><strong>Warum hat er sich an den offenen Stellen genau dafür entschieden?</strong></p></blockquote>
+<p>Damit meine ich kein vollständiges Gedankenprotokoll. Ein Log mit 400 Shell-Befehlen wäre als Review-Artefakt beinahe wertlos.</p>
+<p>Interessant sind die Stellen, an denen aus einer unvollständigen Vorgabe eine verhaltensrelevante Annahme wurde.</p>
+<p>Für das Review-Beispiel könnte ein Eintrag etwa so aussehen:</p>
+<pre><code>Entscheidung:
+Neue Reviews erhalten bei Namenskollision einen Suffix.
+
+Grundlage:
+Anforderung: Bestehende Reviews dürfen nicht überschrieben werden.
+
+Ergänzte Annahme:
+Der kanonische Pfad editorial-review.md bleibt die Quelle
+für nachfolgende Verarbeitungsschritte.
+
+Validiert:
+Bestehende Datei bleibt unverändert.
+Neue Variante wird erzeugt.
+
+Nicht validiert:
+Welche Review-Variante nach der Erzeugung als aktuell gelten soll.</code></pre>
+<p>Hätte ich diesen Eintrag vor dem Code-Diff gesehen, wäre der eigentliche Fehler vermutlich sofort aufgefallen.</p>
+<p>Nicht weil ich TypeScript besser gelesen hätte.</p>
+<p>Sondern weil eine implizite Annahme plötzlich als Entscheidung sichtbar geworden wäre.</p>
+<h2>Wie aus dem Log ein Decision Review werden könnte</h2>
+<p>Praktisch müsste dafür nicht jede Entscheidung protokolliert werden. Sonst entsteht nur ein zweites Logfile, das ebenfalls niemand liest.</p>
+<p>Interessant sind Entscheidungen mit <strong>Interpretationsspielraum</strong>: immer dann, wenn eine Spezifikation mehr als eine vernünftige Umsetzung zulässt, der Agent selbst eine Quelle der Wahrheit auswählt, ein Fallback definiert oder eine fachlich relevante Annahme ergänzt.</p>
+<p>Ein Agent könnte deshalb vor Abschluss einer größeren Aufgabe zusätzlich einen kurzen Decision Review erzeugen. Fünf Fragen würden für einen ersten Versuch reichen:</p>
+<ol>
+<li>Welche verhaltensrelevanten Entscheidungen habe ich getroffen, die nicht ausdrücklich vorgegeben waren?</li>
+<li>Welche plausiblen Alternativen gab es?</li>
+<li>Worauf habe ich meine Auswahl gestützt?</li>
+<li>Wie wurde diese Entscheidung überprüft?</li>
+<li>Welche Annahme sollte ein Mensch vor dem Merge ausdrücklich bestätigen?</li>
+</ol>
+<p>Für mein Beispiel hätte schon eine einzige Zeile gereicht:</p>
+<blockquote><p><strong>Offen: Welche Review-Datei gilt nach dem Erzeugen einer neuen Variante als aktuell?</strong></p></blockquote>
+<p>Dafür hätte es keinen weiteren Architekturworkshop gebraucht.</p>
+<p>Nur einen Moment, in dem die Maschine ihre eigene plausible Ergänzung wieder als offene Entscheidung an mich zurückgibt.</p>
+<p>Ob genau diese fünf Fragen die richtige Form sind, müsste sich in realen Projekten erst zeigen. Ebenso wäre zu prüfen, ob Agenten ihre eigenen relevanten Annahmen zuverlässig genug identifizieren oder ob dafür ein separater Review-Agent bessere Ergebnisse liefert.</p>
+<p>Aber damit wird aus der abstrakten Forderung nach „mehr Nachvollziehbarkeit“ zumindest eine überprüfbare Arbeitshypothese.</p>
+<p>Man kann sie ausprobieren.</p>
+<p>Und man kann messen, welche Fehler dadurch früher auffallen.</p>
+<h2>Nicht jeder Tool-Call ist eine Entscheidung</h2>
+<p>Ein agentischer Entwicklungsprozess kann hunderte Aktionen enthalten, die für einen solchen Review kaum interessant sind.</p>
+<p>Eine Datei wurde gelesen, <code>npm install</code> ausgeführt, der Typecheck gestartet, ein Import korrigiert und der Test erneut ausgeführt.</p>
+<p>Diese Spuren sind für Debugging und Reproduzierbarkeit wertvoll. Sie sind aber nicht automatisch die Entscheidungsspur, die ein menschlicher Reviewer braucht.</p>
+<p>Die interessantere Prüffrage lautet:</p>
+<blockquote><p><strong>Wo hätte ein anderer vernünftiger Entwickler aufgrund derselben Anforderung eine andere Entscheidung treffen können?</strong></p></blockquote>
+<p>Dort lohnt sich die zusätzliche Aufmerksamkeit.</p>
+<p>Das kann eine Architekturentscheidung sein, die Interpretation eines Begriffs, die Wahl einer Quelle der Wahrheit, eine Berechtigungsentscheidung, ein Fallback oder eben die Frage, welche von mehreren erhaltenen Dateien anschließend als aktuell gilt.</p>
+<h2>Der Review-Gegenstand wird größer als der Diff</h2>
+<p>In klassischer Entwicklung steckt ein Teil dieser Information im Entwickler selbst. Wer zwei Tage an einem Feature gearbeitet hat, erinnert sich meistens zumindest daran, warum ein Zustand auf eine bestimmte Weise modelliert oder eine Alternative verworfen wurde.</p>
+<p>Das ist kein besonders zuverlässiges Dokumentationssystem.</p>
+<p>Aber die Entscheidungsstrecke hat Zeit gebraucht.</p>
+<p>Bei einem Coding-Agenten kann dieselbe Strecke stark komprimiert werden. Werden mehrere Agenten parallel eingesetzt, fällt sogar die zeitliche Reihenfolge teilweise auseinander: Ein Mensch sieht anschließend möglicherweise mehrere fertige Diffs aus isolierten Arbeitssträngen. Die Codex-App unterstützt genau solche parallelen Worktree-Workflows.</p>
+<p>Der klassische Code Review wird dadurch nicht überflüssig.</p>
+<p>Aber sein Gegenstand könnte größer werden.</p>
+<p>Neben</p>
+<blockquote><p>Was wurde geändert?</p></blockquote>
+<p>treten Fragen wie:</p>
+<blockquote><p>Welche Anforderungen waren tatsächlich explizit?</p></blockquote>
+<blockquote><p>Welche Verhaltensentscheidungen hat der Agent ergänzt?</p></blockquote>
+<blockquote><p>Worauf stützte er sie?</p></blockquote>
+<blockquote><p>Welche davon wurden nur durch Tests bestätigt, die aus derselben Interpretation entstanden?</p></blockquote>
+<blockquote><p>Was wurde überhaupt nicht gegen die ursprüngliche Absicht geprüft?</p></blockquote>
+<p>Das ist keine neue Entwicklungsmethode.</p>
+<p>Es ist zunächst nur ein anderer Blick auf den Review.</p>
+<h2>Specs reduzieren den Entscheidungsraum. Sie beseitigen ihn nicht.</h2>
+<p>Die naheliegende Antwort auf all das lautet: Dann müssen wir eben bessere Spezifikationen schreiben.</p>
+<p>Ja.</p>
+<p>Aber eine Spezifikation ist keine Gedankenübertragung.</p>
+<p>Der Wert einer guten Spec liegt nicht darin, dass anschließend keine Entscheidungen mehr getroffen werden müssen. Sie reduziert den Raum, in dem ein Agent selbst ergänzen muss, und gibt dem Reviewer eine bessere Grundlage, diese Ergänzungen zu erkennen.</p>
+<p>Wir sollten deshalb vermutlich nicht versuchen, jede mögliche Entscheidung vorab in immer größere Dokumente zu schreiben.</p>
+<p>Interessanter ist die Trennung:</p>
+<p><strong>Was war vorgegeben?</strong></p>
+<p><strong>Was wurde daraus abgeleitet?</strong></p>
+<p><strong>Was musste angenommen werden?</strong></p>
+<p><strong>Und was davon wurde tatsächlich geprüft?</strong></p>
+<p>GitHubs Spec Kit behandelt genau diese Art von Unsicherheit inzwischen explizit: <code>/speckit.clarify</code> soll unterbestimmte Stellen vor der Planung reduzieren, <code>/speckit.analyze</code> sucht später nach Lücken und Widersprüchen zwischen Spec, Plan und Tasks.</p>
+<p>Auch das verhindert keine falsche Entscheidung.</p>
+<p>Aber es schafft Stellen, an denen sie sichtbar werden kann.</p>
+<h2>Das plausible Programm ist schwieriger als das kaputte</h2>
+<p>Ein kaputtes Programm hat einen großen Vorteil: Es zwingt zur Aufmerksamkeit. Der Build schlägt fehl, ein Test wird rot oder die Anwendung startet nicht. Jemand muss hinsehen.</p>
+<p>Ein plausibles Programm ist schwieriger.</p>
+<p>Es kompiliert, die Oberfläche sieht vernünftig aus, die Tests passen zur implementierten Interpretation und der Agent meldet seine Aufgabe als erledigt.</p>
+<p>Genau dann kann menschlicher Review wichtiger werden als vorher.</p>
+<p>Nicht weil der Agent keinen Code schreiben kann.</p>
+<p>Sondern weil er inzwischen gut genug ist, eine unvollständige Absicht in eine konsistente, getestete und dennoch falsche Implementierung zu verwandeln.</p>
+<p>Der Diff zeigt mir, was der Agent geändert hat.</p>
+<p>Die Tests zeigen mir, welche Bedingungen diese Implementierung erfüllt.</p>
+<p>Was mir dazwischen noch fehlt, ist eine andere Frage:</p>
+<p><strong>Welche offenen Fragen hat der Agent für mich beantwortet, ohne dass ich sie überhaupt gestellt hatte?</strong></p>
+<p>Genau die möchte ich vor dem Merge sehen.</p>
+</section></article></main></body></html>

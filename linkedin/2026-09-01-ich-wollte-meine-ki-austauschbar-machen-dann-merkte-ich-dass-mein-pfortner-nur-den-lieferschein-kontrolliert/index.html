@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ich wollte meine KI austauschbar machen. Dann merkte ich, dass mein Pförtner nur den Lieferschein kontrolliert. | Benjamin Lam</title><meta name="description" content="Archivierte Autorenfassung von Benjamin Lam."><link rel="canonical" href="https://benjamin-lam.github.io/linkedin/2026-09-01-ich-wollte-meine-ki-austauschbar-machen-dann-merkte-ich-dass-mein-pfortner-nur-den-lieferschein-kontrolliert/"><meta name="author" content="Benjamin Lam"><meta name="robots" content="index,follow"><meta property="og:type" content="article"><meta property="og:title" content="Ich wollte meine KI austauschbar machen. Dann merkte ich, dass mein Pförtner nur den Lieferschein kontrolliert."><meta property="og:url" content="https://benjamin-lam.github.io/linkedin/2026-09-01-ich-wollte-meine-ki-austauschbar-machen-dann-merkte-ich-dass-mein-pfortner-nur-den-lieferschein-kontrolliert/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Ich wollte meine KI austauschbar machen. Dann merkte ich, dass mein Pförtner nur den Lieferschein kontrolliert.","datePublished":"2026-09-01","dateModified":"2026-11-19","author":{"@type":"Person","name":"Benjamin Lam"},"url":"https://benjamin-lam.github.io/linkedin/2026-09-01-ich-wollte-meine-ki-austauschbar-machen-dann-merkte-ich-dass-mein-pfortner-nur-den-lieferschein-kontrolliert/","isBasedOn":"https://de.linkedin.com/pulse/ich-wollte-meine-ki-austauschbar-machen-dann-merkte-dass-benjamin-lam-kdwmf","inLanguage":"de"}</script><link rel="stylesheet" href="/assets/css/archive.css"></head>
+<body><main class="page article-page"><a class="back-link" href="/">← Zurück zum Archiv</a><article class="archived-article"><header class="article-header"><h1 class="article-title">Ich wollte meine KI austauschbar machen. Dann merkte ich, dass mein Pförtner nur den Lieferschein kontrolliert.</h1><div class="publication-note"><p>Veröffentlicht am 01.09.2026 auf LinkedIn.</p><p>Autorenfassung mit Quellenanhang; der Abgleich mit der veröffentlichten Fassung steht aus. Titelbild und Medien ggf. nicht enthalten. <a href="https://de.linkedin.com/pulse/ich-wollte-meine-ki-austauschbar-machen-dann-merkte-dass-benjamin-lam-kdwmf">Plattformfassung</a> · <a href="original.md">Textquelle (MD)</a></p></div></header><section class="article-body">
+<p>Stellen wir uns für einen Moment vor, ChatGPT, Claude und Codex wären keine KI-Systeme.</p>
+<p>Sondern externe Auftragnehmer.</p>
+<p>Man gibt ihnen einen Job, stellt die notwendigen Unterlagen zusammen, sie verschwinden damit für eine Weile in ihrem Büro und kommen anschließend mit einem Ergebnis zurück.</p>
+<p>So weit, so normal.</p>
+<p>Schwierig wird es erst, wenn nach einigen Monaten der Auftragnehmer wechselt.</p>
+<p>Der neue Kollege sitzt am Tisch, schaut mich erwartungsvoll an und fragt:</p>
+<p>„Was wurde bisher entschieden?“</p>
+<p>Und ich sage:</p>
+<p>„Moment.“</p>
+<p>Dann öffne ich den Chat des alten Auftragnehmers.</p>
+<p>Dort steht irgendwo, warum wir Datei A verwendet und Datei B verworfen haben. Dort steht, welche Variante wir ausprobiert haben. Dort steht, was nicht funktioniert hat. Dort stehen Rückfragen, Zwischenergebnisse, Entscheidungen und womöglich genau der eine Satz, der erklärt, warum das Projekt heute so aussieht, wie es aussieht.</p>
+<p>Ich besitze zwar noch meinen Code.</p>
+<p>Aber einen Teil meiner Arbeit besitzt der Chat.</p>
+<p>Das ist ungefähr der Punkt, an dem die <strong>Independent Workbench</strong> entstanden ist.</p>
+<p>Die Idee ist zunächst erstaunlich unspektakulär:</p>
+<p>Ich möchte KI-Systeme benutzen können, ohne ihnen mein Projektgedächtnis zu schenken.</p>
+<p>Also habe ich angefangen, dieses Gedächtnis aus dem Chat herauszuholen.</p>
+<p>Aufträge, Quellen, Ergebnisse und Entscheidungen sollten bei mir liegen. Die KI sollte nur noch das bekommen, was sie für einen konkreten Job braucht – und danach wieder verschwinden können.</p>
+<p>Die Workbench soll deshalb wie mein eigenes Projektbüro funktionieren. Dort liegen Auftrag, Quellen, Ergebnisse und Entscheidungen. Eine KI bekommt für einen konkreten Job nur die Unterlagen, die sie tatsächlich braucht. Sie erledigt die Arbeit. Das Ergebnis kommt zurück. Und irgendwann kann ein anderer Anbieter denselben Job übernehmen, ohne dass vorher eine digitale Ausgrabung in alten Chats notwendig ist.</p>
+<p>Das klingt vernünftig.</p>
+<p>Es klingt sogar so vernünftig, dass man sehr schnell glauben könnte, das Problem sei damit gelöst.</p>
+<p>Das war es nicht.</p>
+<h3>Wir haben bereits ein Büro. Nur noch keinen echten Auftragnehmer.</h3>
+<p>Die gute Nachricht zuerst:</p>
+<p>Das Projekt funktioniert.</p>
+<p>Zumindest in der Bedeutung von „funktioniert“, die man bei einem Pre-Alpha-Projekt verwenden sollte.</p>
+<p>Es gibt eine portable Kernanwendung. Quellen, Aufgaben, Ergebnisse und Prüfbelege haben maschinenlesbare Formate. Es gibt Regeln für Berechtigungen und Datenklassen. Tests laufen. Eine lokale Demo nimmt eine vorbereitete PHP-Datei, erstellt daraus einen Auftrag, lässt einen Fake-Reviewer arbeiten, überprüft dessen Befund und legt anschließend sechs nachvollziehbare Dateien ab.</p>
+<p>Vereinfacht gesagt: Die Workbench kann heute bereits einen kleinen Auftrag vorbereiten, kontrolliert ausführen lassen und das Ergebnis nachvollziehbar ablegen.</p>
+<p>Das ist nicht nichts.</p>
+<p>Aber es ist ungefähr so, als hätte man ein Restaurant eingerichtet, die Küche getestet, den Bon-Drucker angeschlossen und mit den Mitarbeitern einmal den Freitagabend durchgespielt.</p>
+<p>Nur Gäste waren noch keine da.</p>
+<p>Die derzeitige Workbench ist eine Generalprobe.</p>
+<p>Das Büro steht.</p>
+<p>Die Formulare liegen bereit.</p>
+<p>Die Ablage funktioniert.</p>
+<p>Ein Testdarsteller hat bereits einen Auftrag erledigt.</p>
+<p>Was noch fehlt, ist der Moment, in dem tatsächlich Claude, OpenAI, Codex oder irgendein anderer externer Dienst auf der anderen Seite der Tür steht.</p>
+<p>Bis hierhin hatte ich also vor allem geprüft, ob meine Workbench das tut, was ich programmiert hatte.</p>
+<p>Das tat sie.</p>
+<p>Also habe ich den Blick gewechselt.</p>
+<p>Statt weiterzubauen, habe ich die Idee mehreren Kritikern zum Fraß vorgeworfen. Sie sollten nicht bestätigen, dass die Architektur plausibel klingt.</p>
+<p>Sie sollten nach den Stellen suchen, an denen ich mir selbst etwas vormache.</p>
+<p>Nicht:</p>
+<p>Findet ihr die Idee gut?</p>
+<p>Sondern:</p>
+<p>Wo bricht sie?</p>
+<p>Einige Einwände konnte ich ziemlich schnell abhaken.</p>
+<p>Andere blieben liegen.</p>
+<p>Einer davon betraf ausgerechnet den Teil, bei dem ich mich bis dahin ziemlich sicher gefühlt hatte:</p>
+<p>die Kontrolle darüber, welche Daten das System verlassen.</p>
+<h3>Mein Pförtner ist gewissenhaft. Leider schaut er in den falschen Teil des Pakets.</h3>
+<p>Eine zentrale Idee der Workbench lautet:</p>
+<p>Nicht jede Information darf automatisch an irgendeine Cloud-KI geschickt werden.</p>
+<p>Also bekommt jede Quelle eine Klassifikation.</p>
+<p>Öffentlich.</p>
+<p>Cloud erlaubt.</p>
+<p>Nur lokal.</p>
+<p>Und bevor etwas das eigene System verlässt, kontrolliert die Workbench diese Angaben.</p>
+<p>Sehr ordentlich.</p>
+<p>Leider gibt es ein Problem.</p>
+<p>Eine der Review-Fragen war nämlich ziemlich banal:</p>
+<p><strong>Prüfen wir eigentlich wirklich, was das Haus verlässt?</strong></p>
+<p>Im aktuellen Modell prüft der Pförtner im Wesentlichen den Lieferschein.</p>
+<p>Auf dem steht:</p>
+<p>Im Karton befinden sich drei freigegebene Dateien.</p>
+<p>Stempel drauf.</p>
+<p>Tor auf.</p>
+<p>Nur wissen wir damit noch nicht sicher, ob im Karton tatsächlich genau diese drei Dateien liegen.</p>
+<p>Ein Programm könnte theoretisch ein korrekt freigegebenes Kontextpaket prüfen – und anschließend andere Bytes an den Anbieter übertragen.</p>
+<p>Der Prüfbericht wäre sauber.</p>
+<p>Der Datenabfluss möglicherweise nicht.</p>
+<p>Man könnte nun sagen:</p>
+<p>Dann schauen wir eben direkt vor dem Versand noch einmal in den Karton.</p>
+<p>Nur reicht auch das nicht.</p>
+<p>Wenn zwischen Prüfung und Übertragung noch etwas verändert werden kann, prüfen wir Zustand A und verschicken womöglich Zustand B.</p>
+<p>Das ist keine philosophische Spitzfindigkeit. Es ist einer der echten Blocker vor dem ersten Cloud-Runner.</p>
+<p>Die Lösung ist entsprechend wenig glamourös:</p>
+<p>Der Karton muss versiegelt werden.</p>
+<p>Aus den freigegebenen Daten muss ein unveränderliches Sendepaket entstehen. Davon wird ein digitaler Fingerabdruck erzeugt. Und anschließend muss überprüfbar sein, dass exakt dieses Paket tatsächlich übertragen wurde.</p>
+<p>Nicht:</p>
+<p>„Wir glauben, dass wir diese Dateien geschickt haben.“</p>
+<p>Sondern:</p>
+<p>„Das hier waren die Bytes, die das Haus verlassen haben.“</p>
+<p>Erst dann kontrolliert der Pförtner tatsächlich den Karton.</p>
+<h3>Und dann kommt der Agent und sagt: „Ich hole mir nur noch schnell etwas aus dem Keller.“</h3>
+<p>Bei einem klassischen KI-Aufruf wäre die Sache damit fast erledigt:</p>
+<p>Paket rein.</p>
+<p>Antwort raus.</p>
+<p>Nur ist ein Coding Agent kein Briefkasten.</p>
+<p>Er arbeitet während eines Auftrags weiter, liest, probiert aus, benutzt Werkzeuge und stellt manchmal erst unterwegs fest, dass ihm etwas fehlt.</p>
+<p>Und irgendwann sagt er möglicherweise:</p>
+<p>„Für diese Aufgabe brauche ich übrigens noch config.production.secret.irgendwas.“</p>
+<p>Wenn der Agent in diesem Moment freien Zugriff auf das gesamte Projekt hat, können wir uns das sorgfältig zusammengestellte Kontextpaket auch an den Kühlschrank hängen.</p>
+<p>Dann wurde zwar am Anfang geprüft, welche Unterlagen erlaubt sind.</p>
+<p>Anschließend darf der Auftragnehmer aber selbst durch die Aktenschränke laufen.</p>
+<p>Die Workbench braucht deshalb langfristig eine ziemlich klare Regel:</p>
+<p>Entweder der Agent arbeitet ausschließlich mit seinem versiegelten Paket.</p>
+<p>Oder jeder zusätzliche Zugriff läuft erneut durch die kontrollierte Tür.</p>
+<p>Und diese Tür muss im Zweifel auch sagen können:</p>
+<p>Nein.</p>
+<p>Diese Schublade bleibt zu.</p>
+<h3>Leider kann Software nicht erkennen, dass jemand „streng vertraulich“ als „öffentlich“ markiert hat.</h3>
+<p>Selbst wenn diese technische Kontrolle irgendwann perfekt funktioniert, bleibt allerdings eine zweite Frage:</p>
+<p><strong>Wer entscheidet eigentlich, was überhaupt hinausdarf?</strong></p>
+<p>Damit kommen wir zu einem Problem, das sich nicht wegprogrammieren lässt.</p>
+<p>Menschen.</p>
+<p>Die Workbench kann Regeln hervorragend durchsetzen.</p>
+<p>Wenn dort steht:</p>
+<p>local-only</p>
+<p>kann sie verhindern, dass eine Datei an einen Cloud-Anbieter geschickt wird.</p>
+<p>Was sie nicht wissen kann:</p>
+<p>Ob local-only überhaupt die richtige Entscheidung war.</p>
+<p>Wenn jemand eine vertrauliche Datei versehentlich als öffentlich klassifiziert, führt die Maschine eine falsche Anweisung vollkommen korrekt aus.</p>
+<p>Das ist eine dieser Stellen, an denen Technik gerne beeindruckend aussieht und Organisation trotzdem notwendig bleibt.</p>
+<p>Man kann sichere Standardwerte verwenden.</p>
+<p>Man kann unbekannte Daten zunächst grundsätzlich lokal halten.</p>
+<p>Man kann eine Vorschau anzeigen.</p>
+<p>Bei besonders kritischen Informationen kann ein zweiter Mensch die Freigabe prüfen.</p>
+<p>Aber irgendwann muss jemand sagen:</p>
+<p>„Ja. Diese Information darf raus.“</p>
+<p>Die Workbench kann Verantwortung sichtbar machen.</p>
+<p>Sie kann sie nicht abschaffen.</p>
+<h3>Ein Beleg ist übrigens noch kein Beweis</h3>
+<p>Einer der Bausteine, die zunächst sehr beruhigend wirken, ist der Receipt.</p>
+<p>Zu jedem Lauf soll die Workbench später einen solchen Receipt erzeugen.</p>
+<p>Im Grunde einen Kassenzettel:</p>
+<p>Welcher Anbieter?</p>
+<p>Welcher Auftrag?</p>
+<p>Welche Quellen?</p>
+<p>Welches Ergebnis?</p>
+<p>Wann?</p>
+<p>Mit welchen digitalen Fingerabdrücken?</p>
+<p>Das ist enorm nützlich.</p>
+<p>Aber auch hier lauert eine hübsche Selbsttäuschung.</p>
+<p>Wenn meine eigene Software hinterher einen Zettel ausdruckt, auf dem steht:</p>
+<p>Ich habe exakt diese Daten übertragen.</p>
+<p>dann weiß ich zunächst nur eines:</p>
+<p>Meine Software behauptet, exakt diese Daten übertragen zu haben.</p>
+<p>Der Receipt wird erst wirklich interessant, wenn er dort entsteht, wo die Daten tatsächlich das System verlassen.</p>
+<p>Also wieder am Tor.</p>
+<p>Damit taucht langsam ein Muster auf.</p>
+<p>Je genauer ich hinschaue, desto weniger geht es bei diesem Projekt eigentlich um KI.</p>
+<p>Es geht um <strong>Kontrolle von Übergaben</strong>.</p>
+<p>Wer bekommt was?</p>
+<p>Wer durfte das entscheiden?</p>
+<p>Was wurde tatsächlich übergeben?</p>
+<p>Was kam zurück?</p>
+<p>Was wurde davon angenommen?</p>
+<p>Und lässt sich das später noch nachvollziehen?</p>
+<p>An diesem Punkt wechselten die Reviews erneut die Perspektive.</p>
+<p>Denn selbst wenn ich sauber kontrollieren kann, was einen Anbieter erreicht, bleibt noch eines meiner ursprünglichen Versprechen übrig:</p>
+<p><strong>Ich wollte diesen Anbieter ja gerade austauschbar machen.</strong></p>
+<h3>Jetzt wechseln wir einfach von Claude zu OpenAI.</h3>
+<p>Austauschbarkeit war von Anfang an eines der großen Versprechen der Workbench.</p>
+<p>Die Idee dahinter klingt technisch angenehm sauber:</p>
+<p>Zwischen Workbench und KI sitzt ein sogenannter Runner. Er übersetzt den Auftrag für den jeweiligen Anbieter.</p>
+<p>Soll Claude raus und OpenAI rein, tauschen wir eben den Runner.</p>
+<p>Zumindest auf dem Papier.</p>
+<p>Denn auch das ist im Moment noch ein Satz.</p>
+<p>Kein Beweis.</p>
+<p>Heute existiert davon ein Fake Runner.</p>
+<p>Der macht genau das, was er machen soll.</p>
+<p>Was ungefähr so überraschend ist wie die Erkenntnis, dass mein selbst geschriebener Testkunde die Hausordnung vorbildlich befolgt.</p>
+<p>Interessant wird es erst mit zwei echten, ausreichend unabhängigen Wegen.</p>
+<p>Dann bekommt Runner A einen Auftrag.</p>
+<p>Runner B bekommt fachlich denselben Auftrag.</p>
+<p>Beide Ergebnisse landen wieder lokal.</p>
+<p>Und anschließend wird nicht geprüft, ob beide dasselbe geschrieben haben.</p>
+<p>Das wäre Unsinn.</p>
+<p>Zwei gute Berater können zu unterschiedlichen Einschätzungen kommen.</p>
+<p>Entscheidend ist etwas anderes:</p>
+<p>Erfüllen beide dieselben fachlichen Mindestanforderungen?</p>
+<p>Kann ich mit beiden Resultaten weiterarbeiten?</p>
+<p>Und bleibt mein bisheriger Projektstand erhalten, wenn ich einen der Anbieter aus dem System werfe?</p>
+<p>Das wäre echte Austauschbarkeit.</p>
+<p>Nicht:</p>
+<p>Jede KI antwortet gleich.</p>
+<p>Sondern:</p>
+<p>Keine KI besitzt mein Projekt.</p>
+<p>Bis hierhin hatten wir immer dieselbe Frage gestellt:</p>
+<p><strong>Wie muss die Workbench gebaut sein, damit ihre Versprechen halten?</strong></p>
+<p>Dann kam aus den Reviews eine unangenehmere Frage.</p>
+<p>Eine, die nicht einen Baustein angreift, sondern das ganze Projekt:</p>
+<p><strong>Warum braucht es die Workbench überhaupt?</strong></p>
+<h3>Vielleicht ist aber auch Markdown die bessere Software.</h3>
+<p>Denn der härteste Konkurrent der Independent Workbench ist womöglich kein Startup.</p>
+<p>Kein amerikanischer Plattformanbieter.</p>
+<p>Keine neue Agenten-IDE.</p>
+<p>Ein Ordner.</p>
+<p>Man kann nämlich bereits heute einen Auftrag in eine Markdown-Datei schreiben.</p>
+<p>Die freigegebenen Quellen danebenlegen.</p>
+<p>Alles an Claude oder ChatGPT übergeben.</p>
+<p>Die Antwort speichern.</p>
+<p>Eine Entscheidung darunter schreiben.</p>
+<p>Git commit.</p>
+<p>Fertig.</p>
+<p>Für seltene und wenig riskante Aufgaben ist das möglicherweise vollkommen ausreichend.</p>
+<p>Das ist für mich inzwischen eine der wichtigsten Prüfungen des gesamten Projekts.</p>
+<p>Die Workbench darf nicht deshalb existieren, weil man eine Workbench bauen kann.</p>
+<p>Sie muss etwas besser machen.</p>
+<p>Zum Beispiel:</p>
+<p>Datenfreigaben zuverlässig durchsetzen.</p>
+<p>Einen unterbrochenen Auftrag später wieder aufnehmen.</p>
+<p>Den Anbieter wechseln.</p>
+<p>Prüfungen strukturieren.</p>
+<p>Oder nach Monaten noch erklären können, warum eine Entscheidung getroffen wurde.</p>
+<p>Wenn Nutzer irgendwann sagen:</p>
+<p>„Schönes System. Ich kopiere die drei Dateien trotzdem schnell in ChatGPT.“</p>
+<p>dann haben sie vermutlich recht.</p>
+<p>Das wäre kein Onboarding-Problem.</p>
+<p>Das wäre ein Produkturteil.</p>
+<h3>Es könnte auch sein, dass wir eine perfekte Bürokratie bauen.</h3>
+<p>Selbst wenn die Workbench gegenüber einem Ordner objektiv Vorteile hat, könnte sie an etwas viel Banalerem scheitern:</p>
+<p>Niemand möchte sie benutzen.</p>
+<p>Aufgabenverträge.</p>
+<p>Kontextpakete.</p>
+<p>Freigaben.</p>
+<p>Receipts.</p>
+<p>Prüfungen.</p>
+<p>Entscheidungen.</p>
+<p>Für einen wichtigen Auftrag klingt das vernünftig.</p>
+<p>Für:</p>
+<p>„Kannst du bitte in diesen 20 Zeilen PHP nachsehen, warum die Variable leer ist?“</p>
+<p>klingt es irgendwann nach ISO-Zertifizierung für einen Toaster.</p>
+<p>Auch das gehört zu den Risiken.</p>
+<p>Ein System, das Menschen kontrollierte Arbeitsabläufe ermöglichen soll, kann so viel Kontrolle verlangen, dass Menschen es umgehen.</p>
+<p>Dann gewinnt wieder der Chat.</p>
+<p>Nicht weil er sicherer ist.</p>
+<p>Sondern weil er schneller ist.</p>
+<p>Die Workbench braucht deshalb wahrscheinlich nicht <strong>einen</strong> Prozess.</p>
+<p>Sie braucht ein Verhältnis zwischen Risiko und Aufwand.</p>
+<p>Kleine Aufgabe?</p>
+<p>Kleine Leitplanke.</p>
+<p>Kritischer Auftrag mit vertraulichen Daten und langfristigen Auswirkungen?</p>
+<p>Der ganze Papierkrieg.</p>
+<p>Oder zumindest dessen digitale Variante.</p>
+<h3>Kontrolle hat noch eine zweite, viel langweiligere Seite.</h3>
+<p>Bisher ging es darum, was das System verlassen darf.</p>
+<p>Aber wenn das Projektgedächtnis tatsächlich bei mir bleiben soll, muss ich auch fragen, ob es dort morgen noch existiert.</p>
+<p>Festplatten gehen kaputt.</p>
+<p>USB-Laufwerke verschwinden.</p>
+<p>Verzeichnisse werden gelöscht.</p>
+<p>Konfigurationen zeigen auf Datenträger, die gerade überhaupt nicht angeschlossen sind.</p>
+<p>Wenn das große Versprechen lautet:</p>
+<p>Dein Projektgedächtnis bleibt bei dir.</p>
+<p>wäre es ausgesprochen unglücklich, dieses Projektgedächtnis erfolgreich vor OpenAI, Anthropic und Microsoft zu schützen und anschließend durch eine sterbende SSD zu verlieren.</p>
+<p>Deshalb gehört zu Anbieterunabhängigkeit irgendwann auch eine ziemlich langweilige Übung:</p>
+<p>Backup machen.</p>
+<p>Auf einen anderen Rechner gehen.</p>
+<p>Restore durchführen.</p>
+<p>Und prüfen, ob das Projekt dort ohne ursprünglichen Anbieter wieder vollständig verständlich ist.</p>
+<p>Langweilige Tests sind manchmal die interessantesten.</p>
+<h3>Was haben die Kritiker also kaputtgemacht?</h3>
+<p>Erstaunlich wenig.</p>
+<p>Oder ziemlich viel.</p>
+<p>Je nachdem, was man vorher behauptet hat.</p>
+<p>Die Grundidee wurde nicht widerlegt.</p>
+<p>Cloud-Nutzung widerspricht lokaler Kontrolle nicht automatisch.</p>
+<p>Ein Agent darf während eines Auftrags ein eigenes Arbeitsgedächtnis haben.</p>
+<p>Ein lokales KI-Modell ist keine Voraussetzung.</p>
+<p>Zwei verschiedene Anbieter müssen nicht dieselben Antworten produzieren.</p>
+<p>Und dass die aktuelle Oberfläche eine Python-Kommandozeile ist, ist bei einem frühen Entwickler-MVP kein Weltuntergang.</p>
+<p>Kaputtgegangen ist etwas anderes:</p>
+<p>die Versuchung, aus einer funktionierenden Architektur zu früh ein bewiesenes Produktversprechen zu machen.</p>
+<p>Heute kann die Independent Workbench nicht seriös behaupten:</p>
+<p>Wir verhindern Datenabfluss.</p>
+<p>Oder:</p>
+<p>Beliebige KI-Anbieter sind austauschbar.</p>
+<p>Oder:</p>
+<p>Das System erfüllt Compliance-Anforderungen.</p>
+<p>Was sie heute sagen kann, ist kleiner.</p>
+<p>Aber meiner Meinung nach interessanter:</p>
+<p>Wir haben eine lokale Generalprobe gebaut.</p>
+<p>Jetzt können wir die Behauptungen einzeln testen.</p>
+<h3>Der nächste Test ist deshalb erfreulich unspektakulär</h3>
+<p>Aus den Reviews ist deshalb keine Liste mit zwanzig neuen Features entstanden.</p>
+<p>Eher das Gegenteil.</p>
+<p>Der nächste Schritt ist kleiner geworden.</p>
+<p>Kein Multi-Agent-System.</p>
+<p>Keine Vektordatenbank.</p>
+<p>Keine riesige Weboberfläche.</p>
+<p>Kein lokales 400-Milliarden-Parameter-Modell unter meinem Schreibtisch.</p>
+<p>Ein echtes Repository.</p>
+<p>Ein echter lesender Auftrag.</p>
+<p>Ein exakt definiertes Sendepaket.</p>
+<p>Zwei echte oder zumindest ausreichend unabhängige Runner.</p>
+<p>Fachliche Mindestkriterien.</p>
+<p>Lokale Speicherung.</p>
+<p>Dann ziehen wir einem Anbieter den Stecker.</p>
+<p>Können wir trotzdem weiterarbeiten?</p>
+<p>Danach exportieren wir das Projekt.</p>
+<p>Stellen es auf einem zweiten System wieder her.</p>
+<p>Und irgendwann geben wir es echten Nutzern.</p>
+<p>Nicht um zu zählen, wie viele JSON-Dateien die Workbench erzeugt.</p>
+<p>Sondern um herauszufinden, ob sie weniger Wissen verlieren.</p>
+<p>Ob sie Aufgaben leichter wieder aufnehmen.</p>
+<p>Ob sie Fehler vermeiden.</p>
+<p>Und vor allem:</p>
+<p>Ob sie die Workbench tatsächlich benutzen.</p>
+<h3>Vielleicht ist das eigentliche Produkt gar nicht die Workbench</h3>
+<p>Ich hatte die Reviews ursprünglich angestoßen, um herauszufinden, ob wir wirklich Anbieterunabhängigkeit gebaut hatten – oder nur eine Architektur, die danach aussieht.</p>
+<p>Übrig geblieben ist eine andere Frage als die, mit der ich angefangen habe.</p>
+<p>Nicht:</p>
+<p><strong>Kann ich eine Software bauen, mit der sich unterschiedliche KI-Systeme ansteuern lassen?</strong></p>
+<p>Natürlich kann man das.</p>
+<p>Die interessantere Frage lautet:</p>
+<p><strong>Kann ich KI wie einen externen Auftragnehmer behandeln, ohne gleichzeitig mein Projektgedächtnis, meine Entscheidungen und meine Kontrolle an diesen Auftragnehmer auszulagern?</strong></p>
+<p>Und noch unangenehmer:</p>
+<p><strong>Kann ich diese Kontrolle zurückholen, ohne dabei so viel Bürokratie zu erzeugen, dass niemand das System freiwillig benutzt?</strong></p>
+<p>Genau das ist im Moment die eigentliche Produktthese der Independent Workbench.</p>
+<p>Vielleicht stellt sich am Ende heraus, dass dafür ein paar Markdown-Dateien und Git reichen.</p>
+<p>Vielleicht braucht es eine Workbench.</p>
+<p>Vielleicht entsteht etwas dazwischen.</p>
+<p>Aber immerhin können wir jetzt unterscheiden, was wir wissen und was wir lediglich hoffen.</p>
+<p>Der Pförtner steht jedenfalls schon am Tor.</p>
+<p>Ich dachte nur anfangs, seine Aufgabe bestünde darin, Lieferscheine zu kontrollieren.</p>
+<p>Inzwischen sieht es eher so aus, als müssten wir herausfinden, wie man das ganze Büro organisiert.</p>
+<h2>Quellen und Arbeitsnotizen</h2>
+<p>Die Fußnoten sitzen vor allem an den <strong>Entstehungspunkten der Gedanken</strong>, nicht als nachträgliche „Beweisstempel“ für jede Meinung. Das passt besser zum Charakter des Artikels als Entwicklernotiz und Arbeitsstand.</p>
+<h3>Fußnoten</h3>
+<h3>1. Local-first als Hintergrund der Produktidee</h3>
+<p>Martin Kleppmann, Adam Wiggins, Peter van Hardenberg und Mark McGranaghan beschreiben mit „Local-first Software“ ein Modell, bei dem die lokale Kopie maßgeblich bleibt und Nutzer Kontrolle und langfristigen Zugriff auf ihre Daten behalten, ohne Cloud-Funktionen grundsätzlich auszuschließen.</p>
+<p>Das Papier war für die Überlegung relevant, Projektgedächtnis und Provider voneinander zu trennen.</p>
+<p><strong>Quelle:</strong> Ink &amp; Switch, <em>Local-first software: You own your data, in spite of the cloud</em>, 2019. <a href="https://www.inkandswitch.com/essay/local-first/">Local-first software – Ink &amp; Switch</a></p>
+<hr>
+<h3>2. Aktueller Stand der Independent Workbench</h3>
+<p>Die Projekt-README dokumentiert die lokale M0-Demo: Eine PHP-Datei wird gelesen und gehasht, ein deterministischer Fake Reviewer ausgeführt, dessen Befund überprüft und sechs nachvollziehbare JSON-Artefakte erzeugt.</p>
+<p>Das Projekt bezeichnet dies ausdrücklich als lokalen Contract Flow und nicht als Nachweis für Provider Switching.</p>
+<p><strong>Quelle:</strong> Independent Workbench, Projekt-README und M0-Dokumentation.</p>
+<hr>
+<h3>3. Adversarial Reviews als Arbeitsmethode</h3>
+<p>Im Repository existiert ein eigener Review-Auftrag, der unter anderem Fail-closed-Verhalten, Egress-Klassifikation, Berechtigungen, Time-of-check/Time-of-use-Probleme, Secrets und technisch nicht überprüfbare Behauptungen gezielt angreifen soll.</p>
+<p>Daraus entstanden unter anderem die dokumentierten Claude- und Copilot-Reviews.</p>
+<p><strong>Quelle:</strong> Independent Workbench, <code>adversarial-project-review.prompt.md</code> sowie die dokumentierten Adversarial Reviews.</p>
+<hr>
+<h3>4. Egress-Klassen der Workbench</h3>
+<p>Im eigentlichen Datenmodell sind die Klassen genauer als im vereinfachten Bild des Artikels:</p>
+<ul>
+<li><code>public</code></li>
+<li><code>cloud-approved</code></li>
+<li><code>cloud-redacted</code></li>
+<li><code>local-only</code></li>
+</ul>
+<p>Unbekannte Klassifikationen werden standardmäßig nicht abgeschwächt, sondern bleiben <code>local-only</code>; der Preflight weist solche Quellen für externe Runner zurück.</p>
+<p><strong>Quelle:</strong> Independent Workbench, Datenmodell, Schemas und Preflight-Tests.</p>
+<hr>
+<h3>5. Der „Pförtner kontrolliert den Lieferschein“</h3>
+<p>Diese Überlegung stammt unmittelbar aus der Architektur- und Reviewarbeit.</p>
+<p>Das aktuelle Architekturdokument hält fest, dass der Preflight deklarierte Metadaten validiert. Vor dem ersten externen Adapter soll die Freigabe deshalb an die exakten Bytes gebunden werden, die der Adapter tatsächlich senden kann.</p>
+<p>Dynamische Reads müssen entweder verhindert oder kontrolliert und aufgezeichnet werden. Ein Receipt allein gilt dort ausdrücklich nicht als Beweis dafür, dass keine anderen Bytes versendet werden konnten.</p>
+<p><strong>Quelle:</strong> Independent Workbench, <code>WORKBENCH_ARCHITECTURE.md</code>.</p>
+<hr>
+<h3>6. Digitaler Fingerabdruck / Hash</h3>
+<p>NIST beschreibt kryptografische Hashfunktionen als Verfahren zur Erzeugung eines Message Digest, mit dem erkannt werden kann, ob eine Nachricht seit der Erzeugung des Digest verändert wurde.</p>
+<p>Der Hash ist hier deshalb Teil der Überlegung zur Integrität eines freigegebenen Sendepakets; er ersetzt für sich allein keine kontrollierte Übertragungsgrenze.</p>
+<p><strong>Quelle:</strong> NIST, <em>FIPS 180-4 – Secure Hash Standard</em>. <a href="https://www.nist.gov/publications/secure-hash-standard">Secure Hash Standard – NIST</a></p>
+<hr>
+<h3>7. Coding Agents arbeiten iterativ und mit Werkzeugen</h3>
+<p>OpenAI beschreibt Coding Agents als Systeme, die Repositorys prüfen, Befehle ausführen und mit Entwicklungswerkzeugen interagieren können.</p>
+<p>Für Codex werden deshalb Sandboxing, geschützte Pfade, Freigaben und kontrollierter Netzwerkzugriff als technische Grenzen eingesetzt.</p>
+<p>Diese Arbeitsweise ist der Hintergrund für das Bild vom Agenten, der während eines Auftrags „noch einmal in den Keller“ möchte.</p>
+<p><strong>Quelle:</strong> OpenAI, <em>Running Codex safely at OpenAI</em>, 8. Mai 2026. <a href="https://openai.com/index/running-codex-safely/">Running Codex safely at OpenAI – OpenAI</a></p>
+<hr>
+<h3>8. Least Privilege und erneute Freigabe</h3>
+<p>OWASP empfiehlt für KI-Agenten, nur die für einen konkreten Auftrag notwendigen Tools und Ressourcen freizugeben, Rechte auf einzelne Ressourcen zu begrenzen und für sensible Aktionen explizite Autorisierung vorzusehen.</p>
+<p>Das ist der Sicherheitsgedanke hinter der „kontrollierten Tür“ für nachträglich angeforderte Zugriffe.</p>
+<p><strong>Quelle:</strong> OWASP Cheat Sheet Series, <em>AI Agent Security</em>. <a href="https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html">AI Agent Security – OWASP Cheat Sheet Series</a></p>
+<hr>
+<h3>9. Austauschbarkeit ist noch nicht bewiesen</h3>
+<p>Die Workbench enthält derzeit einen deterministischen Fake Runner.</p>
+<p>Das Repository und das Adversarial Review halten ausdrücklich fest, dass der tatsächliche Weg von einem realen Provider zu einem anderen noch nicht demonstriert wurde und der aktuelle M0-Durchstich kein Provider Switching beweist.</p>
+<p><strong>Quelle:</strong> Independent Workbench, README und Adversarial Reviews.</p>
+<hr>
+<h3>10. Lokale Kontrolle bringt Backup-Verantwortung mit sich</h3>
+<p>Ink &amp; Switch weist bei Local-first Software darauf hin, dass Datenhoheit auch Verantwortung für Backups und Schutz vor Datenverlust bedeutet.</p>
+<p>Die allgemeine Resilienz-Perspektive wird durch NISTs Contingency-Planning-Leitfaden ergänzt, der Recovery-Strategien sowie Tests und Übungen als Bestandteil eines belastbaren Wiederherstellungskonzepts behandelt.</p>
+<p><strong>Quellen:</strong> Ink &amp; Switch, <em>Local-first software: You own your data, in spite of the cloud</em>. <a href="https://www.inkandswitch.com/essay/local-first/">Local-first software – Ink &amp; Switch</a></p>
+<p>NIST, <em>Contingency Planning Guide for Federal Information Systems (SP 800-34 Rev. 1)</em>.</p>
+</section></article></main></body></html>
