@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-20",
-  "note": "Web-Textansicht für alle sechs Originalseiten erreichbar; kein Nachweis eines vollständigen Originalexports. Direkter HTML-Download in Dateiumgebung fehlgeschlagen. Zusätzliche Titel getrennt von ursprünglicher Auswahl, keine Umnummerierung. Keine Veröffentlichung, keine Änderung des ursprünglichen Importstatus.",
+  "note": "Medium-Originalseiten als Web-Textansicht erreichbar. Für die Archivierung genügt eine eigene HTML-Lesefassung. Kein vollständiger Plattformabgleich. CVD war bereits im Altbestand vorhanden, der KI-Arbeitsraum ist zusätzlich als HTML-Autorenfassung gesichert. Keine Änderung der ursprünglichen Auswahl.",
   "linkedin": {
     "selected": 28,
     "export_files_verified_byte_exact": 28,
@@ -16,7 +16,8 @@
       "web_text_accessible": true,
       "original_html_archived": false,
       "medium_version_verified": false,
-      "author_source_status": "existing_author_version"
+      "author_source_status": "existing_author_version",
+      "local_html_path": "medium/2026-08-22-ki-arbeit-ist-arbeitsgestaltung/index.html"
     },
     {
       "id": "D02",
@@ -26,7 +27,8 @@
       "web_text_accessible": true,
       "original_html_archived": false,
       "medium_version_verified": false,
-      "author_source_status": "existing_author_version"
+      "author_source_status": "existing_author_version",
+      "local_html_path": "medium/2026-04-24-jenseits-von-vibe-coding/index.html"
     },
     {
       "id": "D03",
@@ -56,9 +58,10 @@
       "web_text_accessible": true,
       "original_html_archived": false,
       "medium_version_verified": false,
-      "author_source_status": "author_source_only",
+      "author_source_status": "author_html_archived",
       "author_source_path": "medium/2026-06-02-der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/autorenversion.md",
-      "source_note": "Aus gespeicherter semantisch ausgezeichneter Markdown-Autorenfassung; Medium enthält zusätzlich einen Abschnitt Über den Autor; keine Gleichsetzung mit Plattformfassung."
+      "source_note": "Aus gespeicherter semantisch ausgezeichneter Markdown-Autorenfassung; Medium enthält zusätzlich einen Abschnitt Über den Autor; keine Gleichsetzung mit Plattformfassung.",
+      "local_html_path": "medium/2026-06-02-der-ki-arbeitsraum-und-warum-wir-ihn-brauchen/index.html"
     },
     {
       "id": "additional-02",
@@ -68,7 +71,9 @@
       "web_text_accessible": true,
       "original_html_archived": false,
       "medium_version_verified": false,
-      "author_source_status": "missing"
+      "author_source_status": "existing_archive_html",
+      "local_html_path": "medium/2026-06-05-context-verified-development-cvd-oder-warum-code-zum-fluechtigen-abfallprodukt-wird/index.html",
+      "source_note": "Vorhandene HTML-Archivfassung erneut aus GitHub gelesen; Anfang und Schluss plausibel, vollständiger Vergleich mit der Plattformfassung offen."
     }
   ]
 }
